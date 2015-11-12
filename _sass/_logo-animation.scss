@@ -15,14 +15,14 @@ $logo-width: 36px;
   line-height: 56px;
   margin-right: 1rem;
 
-  &.fade-in svg * {
+  &.fade-in svg > * {
     animation-name: fade-in;
-    animation-duration: 750ms;
+    animation-duration: 750ms; // keep in sync with logo-animation.js
     animation-fill-mode: backwards;
     animation-timing-function: ease-in;
   }
 
-  &:not(.fade-in):hover svg * {
+  &:not(.fade-in):hover svg > * {
     animation-name: sparkle;
     animation-duration: 1000ms;
     animation-fill-mode: none;
@@ -36,7 +36,7 @@ $logo-width: 36px;
     vertical-align: middle;
     transition: 250ms;
 
-    * {
+    > * {
       transition: 500ms;
     }
 
@@ -49,6 +49,9 @@ $logo-width: 36px;
 
     $base_delay: 10ms; $m_base_delay: $base_delay * $r_shapes;
                        $r_base_delay: $base_delay * $m_shapes;
+
+                       // $max_delay: $base_delay * $m_shapes * $r_shapes;
+                       // keep maximum in sync with logo-animation.js
 
     @mixin get_logo_animation_delay($num, $delay_base) {
       animation-delay: $num * $delay_base;
