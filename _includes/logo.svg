@@ -1,22 +1,23 @@
-<svg xmlns='http://www.w3.org/2000/svg' height='100%' width='100%' viewBox='0 0 12 10'>
-  <polygon fill='#00788C' points='4,0 4,2 6,0 '/>
-  <polygon fill='#008477' points='4,2 10,2 6,0 '/>
-  <polygon fill='#00B3A3' points='6,0 10,2 10,0 '/>
-  <polygon fill='#00AF77' points='10,0 10,2 12,0 '/>
-  <polygon fill='#009864' points='10,2 10,4 12,0 '/>
-  <polygon fill='#008764' points='10,4 12,4 12,0 '/>
-  <path    fill='#68A667' d='M10,4c0,0.5521998-0.4477997,1-1,1S8,4.5521998,8,4H6l4,2l2-2H10z'/>
-  <path    fill='#598350' d='M9,7c1.6567001,0,3-1.3432999,3-3L9,7z'/>
-  <path    fill='#328C50' d='M9,7l1-1L6,4C6,5.6567001,7.3432598,7,9,7z'/>
-  <polygon fill='#00AF8B' points='6,4 8,4 8,2 '/>
-  <polygon fill='#00C28B' points='6,2 6,4 8,2 '/>
-  <path    fill='#008E75' d='M6,4V2L4,7l2.1401978-2.1401978C6.0577393,4.5856934,6,4.3009644,6,4z'/>
-  <polygon fill='#009977' points='4,4 4,7 6,2 '/>
-  <polygon fill='#003998' points='2,5 4,7 4,4 '/>
-  <polygon fill='#000B7E' points='2,2 2,5 4,4 '/>
-  <polygon fill='#0087D0' points='0,2 0,3 2,5 2,2 '/>
-  <polygon fill='#0065C7' points='0,3 0,5 2,7 2,5 '/>
-  <polygon fill='#0055BB' points='0,8 2,8 2,7 0,5 '/>
-  <polygon fill='#0098FF' points='0,8 0,10 2,8 '/>
-  <polygon fill='#0076EE' points='0,10 2,10 2,8 '/>
-</svg>
+
+        <svg xmlns='http://www.w3.org/2000/svg' height='100%' width='100%' viewBox='0 0 12 10'>
+          <polygon fill='#00788C' points='4,0 4,2 6,0 '/>
+          <polygon fill='#008477' points='4,2 10,2 6,0 '/>
+          <polygon fill='#00B3A3' points='6,0 10,2 10,0 '/>
+          <polygon fill='#00AF77' points='10,0 10,2 12,0 '/>
+          <polygon fill='#009864' points='10,2 10,4 12,0 '/>
+          <polygon fill='#008764' points='10,4 12,4 12,0 '/>
+          <path    fill='#68A667' d='M10,4c0,0.5521998-0.4477997,1-1,1S8,4.5521998,8,4H6l4,2l2-2H10z'/>
+          <path    fill='#598350' d='M9,7c1.6567001,0,3-1.3432999,3-3L9,7z'/>
+          <path    fill='#328C50' d='M9,7l1-1L6,4C6,5.6567001,7.3432598,7,9,7z'/>
+          <polygon fill='#00AF8B' points='6,4 8,4 8,2 '/>
+          <polygon fill='#00C28B' points='6,2 6,4 8,2 '/>
+          <path    fill='#008E75' d='M6,4V2L4,7l2.1401978-2.1401978C6.0577393,4.5856934,6,4.3009644,6,4z'/>
+          <polygon fill='#009977' points='4,4 4,7 6,2 '/>
+          <polygon fill='#003998' points='2,5 4,7 4,4 '/>
+          <polygon fill='#000B7E' points='2,2 2,5 4,4 '/>
+          <polygon fill='#0087D0' points='0,2 0,3 2,5 2,2 '/>
+          <polygon fill='#0065C7' points='0,3 0,5 2,7 2,5 '/>
+          <polygon fill='#0055BB' points='0,8 2,8 2,7 0,5 '/>
+          <polygon fill='#0098FF' points='0,8 0,10 2,8 '/>
+          <polygon fill='#0076EE' points='0,10 2,10 2,8 '/>
+        </svg>
