@@ -44,6 +44,8 @@ $on-laptop:        800px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
+        "logo-colors",
+        "darkmode",
         "layout",
         "logo-animation",
         "syntax-highlighting"

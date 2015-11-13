@@ -58,28 +58,28 @@ $logo-width: 36px;
     }
 
     // R letter
-    :nth-child( 1) { @include get_logo_animation_delay( 1,$r_base_delay); }
-    :nth-child( 2) { @include get_logo_animation_delay( 2,$r_base_delay); }
-    :nth-child( 3) { @include get_logo_animation_delay( 3,$r_base_delay); }
-    :nth-child( 4) { @include get_logo_animation_delay( 4,$r_base_delay); }
-    :nth-child( 5) { @include get_logo_animation_delay( 5,$r_base_delay); }
-    :nth-child( 6) { @include get_logo_animation_delay( 6,$r_base_delay); }
-    :nth-child( 7) { @include get_logo_animation_delay( 7,$r_base_delay); }
-    :nth-child( 8) { @include get_logo_animation_delay( 8,$r_base_delay); }
-    :nth-child( 9) { @include get_logo_animation_delay( 9,$r_base_delay); }
-    :nth-child(10) { @include get_logo_animation_delay(10,$r_base_delay); }
-    :nth-child(11) { @include get_logo_animation_delay(11,$r_base_delay); }
-    :nth-child(12) { @include get_logo_animation_delay(12,$r_base_delay); }
-    :nth-child(13) { @include get_logo_animation_delay(13,$r_base_delay); }
+    .r-shape1 { fill: $r_shape01; @include get_logo_animation_delay( 1,$r_base_delay); }
+    .r-shape2 { fill: $r_shape02; @include get_logo_animation_delay( 2,$r_base_delay); }
+    .r-shape3 { fill: $r_shape03; @include get_logo_animation_delay( 3,$r_base_delay); }
+    .r-shape4 { fill: $r_shape04; @include get_logo_animation_delay( 4,$r_base_delay); }
+    .r-shape5 { fill: $r_shape05; @include get_logo_animation_delay( 5,$r_base_delay); }
+    .r-shape6 { fill: $r_shape06; @include get_logo_animation_delay( 6,$r_base_delay); }
+    .r-shape7 { fill: $r_shape07; @include get_logo_animation_delay( 7,$r_base_delay); }
+    .r-shape8 { fill: $r_shape08; @include get_logo_animation_delay( 8,$r_base_delay); }
+    .r-shape9 { fill: $r_shape09; @include get_logo_animation_delay( 9,$r_base_delay); }
+    .r-shape10{ fill: $r_shape10; @include get_logo_animation_delay(10,$r_base_delay); }
+    .r-shape11{ fill: $r_shape11; @include get_logo_animation_delay(11,$r_base_delay); }
+    .r-shape12{ fill: $r_shape12; @include get_logo_animation_delay(12,$r_base_delay); }
+    .r-shape13{ fill: $r_shape13; @include get_logo_animation_delay(13,$r_base_delay); }
 
     // M letter
-    :nth-child(14) { @include get_logo_animation_delay( 7,$m_base_delay); }
-    :nth-child(15) { @include get_logo_animation_delay( 6,$m_base_delay); }
-    :nth-child(16) { @include get_logo_animation_delay( 5,$m_base_delay); }
-    :nth-child(17) { @include get_logo_animation_delay( 4,$m_base_delay); }
-    :nth-child(18) { @include get_logo_animation_delay( 3,$m_base_delay); }
-    :nth-child(19) { @include get_logo_animation_delay( 2,$m_base_delay); }
-    :nth-child(20) { @include get_logo_animation_delay( 1,$m_base_delay); }
+    .m-shape7 { fill: $m_shape07; @include get_logo_animation_delay( 7,$m_base_delay); }
+    .m-shape6 { fill: $m_shape06; @include get_logo_animation_delay( 6,$m_base_delay); }
+    .m-shape5 { fill: $m_shape05; @include get_logo_animation_delay( 5,$m_base_delay); }
+    .m-shape4 { fill: $m_shape04; @include get_logo_animation_delay( 4,$m_base_delay); }
+    .m-shape3 { fill: $m_shape03; @include get_logo_animation_delay( 3,$m_base_delay); }
+    .m-shape2 { fill: $m_shape02; @include get_logo_animation_delay( 2,$m_base_delay); }
+    .m-shape1 { fill: $m_shape01; @include get_logo_animation_delay( 1,$m_base_delay); }
 
   }
 }
