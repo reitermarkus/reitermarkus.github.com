@@ -57,29 +57,29 @@ $logo-width: 36px;
       animation-delay: $num * $delay_base;
     }
 
-    // R letter
-    .r-shape1 { fill: $r_shape01; @include get_logo_animation_delay( 1,$r_base_delay); }
-    .r-shape2 { fill: $r_shape02; @include get_logo_animation_delay( 2,$r_base_delay); }
-    .r-shape3 { fill: $r_shape03; @include get_logo_animation_delay( 3,$r_base_delay); }
-    .r-shape4 { fill: $r_shape04; @include get_logo_animation_delay( 4,$r_base_delay); }
-    .r-shape5 { fill: $r_shape05; @include get_logo_animation_delay( 5,$r_base_delay); }
-    .r-shape6 { fill: $r_shape06; @include get_logo_animation_delay( 6,$r_base_delay); }
-    .r-shape7 { fill: $r_shape07; @include get_logo_animation_delay( 7,$r_base_delay); }
-    .r-shape8 { fill: $r_shape08; @include get_logo_animation_delay( 8,$r_base_delay); }
-    .r-shape9 { fill: $r_shape09; @include get_logo_animation_delay( 9,$r_base_delay); }
-    .r-shape10{ fill: $r_shape10; @include get_logo_animation_delay(10,$r_base_delay); }
-    .r-shape11{ fill: $r_shape11; @include get_logo_animation_delay(11,$r_base_delay); }
-    .r-shape12{ fill: $r_shape12; @include get_logo_animation_delay(12,$r_base_delay); }
-    .r-shape13{ fill: $r_shape13; @include get_logo_animation_delay(13,$r_base_delay); }
-
     // M letter
-    .m-shape7 { fill: $m_shape07; @include get_logo_animation_delay( 7,$m_base_delay); }
-    .m-shape6 { fill: $m_shape06; @include get_logo_animation_delay( 6,$m_base_delay); }
-    .m-shape5 { fill: $m_shape05; @include get_logo_animation_delay( 5,$m_base_delay); }
-    .m-shape4 { fill: $m_shape04; @include get_logo_animation_delay( 4,$m_base_delay); }
-    .m-shape3 { fill: $m_shape03; @include get_logo_animation_delay( 3,$m_base_delay); }
-    .m-shape2 { fill: $m_shape02; @include get_logo_animation_delay( 2,$m_base_delay); }
-    .m-shape1 { fill: $m_shape01; @include get_logo_animation_delay( 1,$m_base_delay); }
+    .m-shape01 { fill: $m_shape01; @include get_logo_animation_delay( 1,$m_base_delay); }
+    .m-shape02 { fill: $m_shape02; @include get_logo_animation_delay( 2,$m_base_delay); }
+    .m-shape03 { fill: $m_shape03; @include get_logo_animation_delay( 3,$m_base_delay); }
+    .m-shape04 { fill: $m_shape04; @include get_logo_animation_delay( 4,$m_base_delay); }
+    .m-shape05 { fill: $m_shape05; @include get_logo_animation_delay( 5,$m_base_delay); }
+    .m-shape06 { fill: $m_shape06; @include get_logo_animation_delay( 6,$m_base_delay); }
+    .m-shape07 { fill: $m_shape07; @include get_logo_animation_delay( 7,$m_base_delay); }
+
+    // R letter
+    .r-shape01 { fill: $r_shape01; @include get_logo_animation_delay( 1,$r_base_delay); }
+    .r-shape02 { fill: $r_shape02; @include get_logo_animation_delay( 2,$r_base_delay); }
+    .r-shape03 { fill: $r_shape03; @include get_logo_animation_delay( 3,$r_base_delay); }
+    .r-shape04 { fill: $r_shape04; @include get_logo_animation_delay( 4,$r_base_delay); }
+    .r-shape05 { fill: $r_shape05; @include get_logo_animation_delay( 5,$r_base_delay); }
+    .r-shape06 { fill: $r_shape06; @include get_logo_animation_delay( 6,$r_base_delay); }
+    .r-shape07 { fill: $r_shape07; @include get_logo_animation_delay( 7,$r_base_delay); }
+    .r-shape08 { fill: $r_shape08; @include get_logo_animation_delay( 8,$r_base_delay); }
+    .r-shape09 { fill: $r_shape09; @include get_logo_animation_delay( 9,$r_base_delay); }
+    .r-shape10 { fill: $r_shape10; @include get_logo_animation_delay(10,$r_base_delay); }
+    .r-shape11 { fill: $r_shape11; @include get_logo_animation_delay(11,$r_base_delay); }
+    .r-shape12 { fill: $r_shape12; @include get_logo_animation_delay(12,$r_base_delay); }
+    .r-shape13 { fill: $r_shape13; @include get_logo_animation_delay(13,$r_base_delay); }
 
   }
 }

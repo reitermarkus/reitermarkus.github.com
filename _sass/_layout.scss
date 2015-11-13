@@ -17,9 +17,11 @@
     margin-bottom: 0;
     float: left;
 
-    &,
-    &:visited {
+    a {
+      &,
+      &:visited {
         color: $grey-color-dark;
+      }
     }
 }
 
