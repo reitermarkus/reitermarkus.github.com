@@ -17,3 +17,12 @@ markdown: kramdown
 gems:
   - jekyll-sitemap
   - jekyll-redirect-from
+
+# Exclusions
+exclude: [
+  '.gitignore',
+  'ReadMe.md',
+  'CNAME',
+  'Gemfile',
+  'Gemfile.lock',
+]
