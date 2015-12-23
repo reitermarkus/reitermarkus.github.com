@@ -6,8 +6,8 @@
   <title>{% if page.title %}{{ page.title }} ° {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{{ site.description }}">
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="{{ "/js/logo-animation.js" | prepend: site.baseurl }}"></script>
