@@ -1,3 +1,41 @@
+$github-ribbon-size: 250px;
+
+.github-ribbon {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: $github-ribbon-size;
+  height: $github-ribbon-size;
+
+  @include media-query($on-tablets) {
+    display: block;
+  }
+
+  .inner-ribbon {
+    transform: rotate(-45deg);
+    background: black;
+    width: $github-ribbon-size;
+    text-align: center;
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -$github-ribbon-size/2-$github-ribbon-size/4;
+    line-height: 28px;
+    margin-top: -$github-ribbon-size/4-14px;
+    vertical-align: center;
+
+    &,
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+
+  }
+
+}
+
 .header  {
 
    -webkit-tap-highlight-color: rgba(0,0,0,0);
