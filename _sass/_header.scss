@@ -10,6 +10,10 @@
 
     &:active {
       background-color: $menu-link-active-color;
+
+      @include media-query($on-phablets) {
+        background-color: initial;
+      }
     }
   }
 
@@ -40,6 +44,11 @@
         &,
         &:visited {
           color: $grey-color-dark;
+        }
+
+        &:hover {
+          text-decoration: none;
+          color: darken($grey-color-dark, 25%);
         }
       }
     }
