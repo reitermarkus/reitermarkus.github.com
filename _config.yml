@@ -1,4 +1,4 @@
-# Site settings
+# Site Settings
 title: Markus Reiter
 email: me@reitermark.us
 description: >
@@ -9,8 +9,9 @@ baseurl: ''
 url: https://markus.re
 twitter_username: reitermarkus
 github_username:  reitermarkus
+timezone: Europe/Vienna
 
-# Build settings
+# Build Settings
 markdown: kramdown
 
 # Plugins
