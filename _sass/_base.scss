@@ -121,30 +121,36 @@ blockquote {
 
 
 
-/**
- * Code formatting
- */
+// Code formatting
+
 pre,
 code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
+  border: $menu-link-border;
+  border-radius: 0.25em;
+  background-color: $menu-link-background-color;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+
+  @include retina() {
+    border-width: 0.5px;
+  }
 }
 
 code {
-    padding: 1px 5px;
+  padding: 0.125em 0.375em;
+  vertical-align: middle;
+  font-size: 0.8125em;
 }
 
 pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
+  padding: 8px 12px;
+  overflow-x: scroll;
 
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
+  code {
+    border: none;
+    padding: 0;
+  }
 }
 
 
