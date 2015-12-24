@@ -4,6 +4,16 @@ $content-width: 90%;
   width: $content-width;
   margin: 0 auto;
 
+  > header h1 a {
+    color: $page-title-color;
+  }
+
+  p {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+  }
+
   .fluid {
     width: 100%/$content-width*100%;
     margin-left: -(100%-$content-width)/2/$content-width*100%;
