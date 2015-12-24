@@ -1,8 +1,8 @@
-$content-width: 90%;
-
 .content {
-  width: $content-width;
   margin: 0 auto;
+  padding: 0 ((100%-$content-width)/2);
+  width: auto;
+  max-width: $max-content-width;
 
   > header h1 a {
     color: $page-title-color;
@@ -19,6 +19,11 @@ $content-width: 90%;
     margin-left: -(100%-$content-width)/2/$content-width*100%;
     height: auto !important;
     display: block;
+
+    @include media-query($on-desktops) {
+      width: $fluid-width-on-desktops;
+      margin-left: ($max-content-width+(-$fluid-width-on-desktops))/2;
+    }
 
     img {
       width: 100%;

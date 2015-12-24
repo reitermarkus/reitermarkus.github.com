@@ -11,7 +11,7 @@
     &:active {
       background-color: $menu-link-active-color;
 
-      @include media-query($on-phablets) {
+      @include media-query($on-tablets) {
         background-color: initial;
       }
     }
@@ -22,7 +22,7 @@
     margin: 0;
     padding: $header-padding-mobile 0;
 
-    @include media-query($on-phablets) {
+    @include media-query($on-tablets) {
       padding-top: $header-padding-phablet;
     }
 
@@ -34,7 +34,7 @@
   .site-title {
     display: none;
 
-    @include media-query($on-phablets) {
+    @include media-query($on-tablets) {
       display: block;
       font-size: 26px;
       letter-spacing: -1px;
@@ -59,7 +59,7 @@
     margin: 0 0 37px 0;
     width: 100%;
 
-    @include media-query($on-phablets) {
+    @include media-query($on-tablets) {
       padding-bottom: $header-padding-phablet;
       margin-top: $header-padding-phablet;
       margin-bottom: $header-padding-phablet;
@@ -84,7 +84,7 @@
       list-style: none;
       margin: 0;
 
-      @include media-query($on-phablets) {
+      @include media-query($on-tablets) {
         clear: left;
         float: right;
         position: relative;
@@ -139,7 +139,7 @@
         }
       }
 
-      @include media-query($on-phablets) {
+      @include media-query($on-tablets) {
         text-transform: uppercase;
         float: left;
         position: relative;
@@ -179,11 +179,7 @@
 
       a {
         display: block;
-        background-image: url('data:image/svg+xml;utf8,
-                                <svg xmlns="http://www.w3.org/2000/svg" height="13px" viewBox="0 0 16 26">
-                                  <polygon opacity="0.2" points="3,0.25 15.75,13 3,25.75 0.75,23.5 11.25,13 0.75,2.5"/>
-                                </svg>
-                              ');
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="13px" viewBox="0 0 16 26"><polygon opacity="0.2" points="3,0.25 15.75,13 3,25.75 0.75,23.5 11.25,13 0.75,2.5"/></svg>');
         background-repeat: no-repeat;
         background-position: right center;
 
@@ -194,7 +190,7 @@
         font-size: 100%;
         color: $black;
 
-        @include media-query($on-phablets) {
+        @include media-query($on-tablets) {
           background-image: none;
           height: auto;
           line-height: inherit;

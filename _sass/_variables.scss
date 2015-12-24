@@ -69,8 +69,11 @@ $grey-color-dark:  darken($grey-color, 25%);
 $on-palm:          600px;
 $on-laptop:        800px;
 
+$content-width: 90%;
+$max-content-width: 960px;
+
+$fluid-width-on-desktops: 1280px;
+
 $on-phones:       320px;
-$on-phablets:     640px;
-$on-tablets:      768px;
-$on-desktops:    1024px;
-$on-widescreens: 1280px;
+$on-tablets:      640px;
+$on-desktops:    1440px;
