@@ -2,32 +2,80 @@
  * Site footer
  */
 
+// Sticky Footer
+
+html, body {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+body {
+  display: table;
+}
+
 .footer {
+  display: table-row;
+  height: 1px;
   color: $footer-text-color;
   text-align: center;
 
   ul {
-    margin: 0;
+    margin: $header-padding-mobile 0 0 0;
+    background-color: $menu-link-background-color;
     padding: $header-padding-mobile 0;
+    border-top: $menu-link-border;
+
+    @include retina() {
+      border-width: 0.5px;
+    }
 
     @include media-query($on-tablets) {
       padding-top: $header-padding-tablet;
       padding-bottom: $header-padding-tablet;
+      margin-top: $header-padding-tablet;
     }
 
     @include media-query($on-desktops) {
-      padding-top: $header-padding-desktop;
+      margin-top: $header-padding-desktop;
     }
 
     li {
-      display: inline;
+      display: inline-block;
+      width: 100%;
+      margin: 0 0 $header-padding-mobile/2 0;
 
-      &:not(:first-child) {
+      &:last-child {
+        margin-bottom: 0;
+      }
 
-        &:before {
-          content: ' |  ';
+      @include media-query($on-phones) {
+
+        &:not(:first-child) {
+          width: auto;
+
+          &:nth-child(2n) {
+            &:after {
+              content: ' |  ';
+            }
+          }
+        }
+
+        &:after {
           margin-right: .5em;
           margin-left: .5em;
+        }
+      }
+
+      @include media-query($on-tablets) {
+        width: auto;
+        margin: 0;
+
+        &:first-child {
+
+          &:after {
+            content: ' |  ';
+          }
         }
       }
 
@@ -42,14 +90,15 @@
             fill: $link-color;
           }
         }
+
+        svg path {
+          fill: $footer-text-color;
+        }
       }
     }
   }
-
-  .icon svg path {
-    fill: $footer-text-color;
-  }
 }
+
 
 
 
@@ -58,27 +107,23 @@
  * Page content
  */
 
-.page-heading {
-    font-size: 20px;
-}
-
 .post-list {
-    margin-left: 0;
-    list-style: none;
+  margin-left: 0;
+  list-style: none;
 
-    > li {
-        margin-bottom: $spacing-unit;
-    }
+  > li {
+    margin-bottom: $spacing-unit;
+  }
 }
 
 .post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
+  font-size: $small-font-size;
+  color: $grey-color;
 }
 
 .post-link {
-    display: block;
-    font-size: 24px;
+  display: block;
+  font-size: 24px;
 }
 
 
@@ -87,7 +132,7 @@
  * Posts
  */
 .post-header {
-    margin-bottom: $spacing-unit;
+  margin-bottom: $spacing-unit;
 }
 
 .post-title {
