@@ -4,8 +4,18 @@
   width: auto;
   max-width: $max-content-width;
 
-  > header h1 a {
-    color: $page-title-color;
+  @include media-query($on-desktops) {
+    font-size: 1.25em;
+  }
+
+  > header {
+    h1 {
+      font-size: 2.5em;
+
+      a {
+        color: $page-title-color;
+      }
+    }
   }
 
   p {

@@ -23,7 +23,7 @@
     padding: $header-padding-mobile 0;
 
     @include media-query($on-tablets) {
-      padding-top: $header-padding-phablet;
+      padding-top: $header-padding-tablet;
     }
 
     @include media-query($on-desktops) {
@@ -60,9 +60,9 @@
     width: 100%;
 
     @include media-query($on-tablets) {
-      padding-bottom: $header-padding-phablet;
-      margin-top: $header-padding-phablet;
-      margin-bottom: $header-padding-phablet;
+      padding-bottom: $header-padding-tablet;
+      margin-top: $header-padding-tablet;
+      margin-bottom: $header-padding-tablet;
       border-bottom: $menu-link-border;
 
       @include retina() {

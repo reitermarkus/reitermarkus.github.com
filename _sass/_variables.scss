@@ -50,6 +50,8 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 $text-color:       #111;
+$footer-text-color: $r_shape13;
+
 $background-color: rgb(240, 240, 244);
 
 $menu-link-background-color: rgb(255, 255, 255);
@@ -59,7 +61,7 @@ $menu-link-active-color: rgb(217, 217, 217);
 $menu-link-height: 44px;
 
 $header-padding-mobile: $menu-link-height/2;
-$header-padding-phablet: 2em;
+$header-padding-tablet: 2em;
 $header-padding-desktop: 4em;
 
 $grey-color:       #828282;
