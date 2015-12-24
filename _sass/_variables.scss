@@ -1,0 +1,71 @@
+
+// Base Colors
+
+$white: #fff;
+$black: #000;
+
+
+// Logo Colors
+
+$m_shape01: #0076EE;
+$m_shape02: #0098FF;
+$m_shape03: #0055BB;
+$m_shape04: #0065C7;
+$m_shape05: #0087D0;
+$m_shape06: #000B7E;
+$m_shape07: #003998;
+
+$r_shape01: #00788C;
+$r_shape02: #008477;
+$r_shape03: #009977;
+$r_shape04: #00B3A3;
+$r_shape05: #00AF77;
+$r_shape06: #009864;
+$r_shape07: #00C28B;
+$r_shape08: #008764;
+$r_shape09: #00788C;
+$r_shape10: #008477;
+$r_shape11: #00AF8B;
+$r_shape12: #00C28B;
+$r_shape13: #008E75;
+
+
+// Link Color
+
+$link-color: $m_shape02;
+
+
+// Our variables
+
+$base-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: rgb(240, 240, 244);
+
+$menu-link-background-color: rgb(255, 255, 255);
+$menu-link-border-color: rgb(200, 199, 204);
+$menu-link-border: 1px solid $menu-link-border-color;
+$menu-link-active-color: rgb(217, 217, 217);
+$menu-link-height: 44px;
+
+$header-padding-mobile: $menu-link-height/2;
+$header-padding-phablet: 2em;
+$header-padding-desktop: 4em;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+$on-phones:       320px;
+$on-phablets:     640px;
+$on-tablets:      768px;
+$on-desktops:    1024px;
+$on-widescreens: 1280px;

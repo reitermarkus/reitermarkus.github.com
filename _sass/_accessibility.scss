@@ -1,0 +1,9 @@
+/**
+ * Prevent elements with attribute `aria-hidden=false` from being
+ * displayed but still be read by screen readers.
+ */
+
+[aria-hidden=false] {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+}

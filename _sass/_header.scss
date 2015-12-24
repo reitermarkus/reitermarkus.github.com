@@ -1,0 +1,203 @@
+.header  {
+
+   -webkit-tap-highlight-color: rgba(0,0,0,0);
+   background-color: $menu-link-background-color;
+
+  .logo,
+  .site-title {
+    text-align: center;
+    width: 100%;
+
+    &:active {
+      background-color: $menu-link-active-color;
+    }
+  }
+
+  .logo {
+    display: block;
+    margin: 0;
+    padding: $header-padding-mobile 0;
+
+    @include media-query($on-phablets) {
+      padding-top: $header-padding-phablet;
+    }
+
+    @include media-query($on-desktops) {
+      padding-top: $header-padding-desktop;
+    }
+  }
+
+  .site-title {
+    display: none;
+
+    @include media-query($on-phablets) {
+      display: block;
+      font-size: 26px;
+      letter-spacing: -1px;
+      margin: 0;
+
+      a {
+        &,
+        &:visited {
+          color: $grey-color-dark;
+        }
+      }
+    }
+  }
+
+  nav {
+    clear: left;
+    margin: 0 0 37px 0;
+    width: 100%;
+
+    @include media-query($on-phablets) {
+      padding-bottom: $header-padding-phablet;
+      margin-top: $header-padding-phablet;
+      margin-bottom: $header-padding-phablet;
+      border-bottom: $menu-link-border;
+
+      @include retina() {
+        border-width: 0.5px;
+      }
+    }
+
+    @include media-query($on-desktops) {
+      margin-top: $header-padding-desktop;
+      margin-bottom: $header-padding-desktop;
+    }
+
+    &,
+    ul {
+      @extend %clearfix;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+
+      @include media-query($on-phablets) {
+        clear: left;
+        float: right;
+        position: relative;
+        right: 50%;
+        width: auto;
+      }
+    }
+
+    li {
+      display: block;
+      box-sizing: border-box;
+      padding: 0 15px;
+      float: left;
+      width: 100%;
+      background-color: $menu-link-background-color;
+      border-bottom: $menu-link-border;
+
+      @include retina() {
+        border-width: 0.5px;
+      }
+
+      &:first-child {
+        border-top: $menu-link-border;
+
+        @include retina() {
+          border-width: 0.5px;
+        }
+      }
+
+      &.current,
+      &:active {
+        background-color: $menu-link-active-color;
+      }
+
+      @include media-query($on-phones) {
+        width: 50%;
+
+        &:nth-child(2) {
+          border-top: $menu-link-border;
+
+          @include retina() {
+            border-width: 0.5px;
+          }
+        }
+
+        &:nth-child(2n-1) {
+          border-right: $menu-link-border;
+
+          @include retina() {
+            border-width: 0.5px;
+          }
+        }
+      }
+
+      @include media-query($on-phablets) {
+        text-transform: uppercase;
+        float: left;
+        position: relative;
+        left: 50%;
+        width: auto;
+        padding: 0;
+
+        &:not(:first-child) {
+          margin-left: 1em;
+        }
+
+        &,
+        &:nth-child(1n) {
+          border: none;
+        }
+
+        &:active,
+        &.current {
+          background-color: initial;
+        }
+
+        &.current {
+
+          a {
+            border-bottom: 1px solid;
+          }
+
+          &:nth-child(2n) a {
+            border-color: $r_shape04;
+          }
+
+          &:nth-child(2n-1) a {
+            border-color: $m_shape02;
+          }
+        }
+      }
+
+      a {
+        display: block;
+        background-image: url('data:image/svg+xml;utf8,
+                                <svg xmlns="http://www.w3.org/2000/svg" height="13px" viewBox="0 0 16 26">
+                                  <polygon opacity="0.2" points="3,0.25 15.75,13 3,25.75 0.75,23.5 11.25,13 0.75,2.5"/>
+                                </svg>
+                              ');
+        background-repeat: no-repeat;
+        background-position: right center;
+
+        padding: 0;
+        height: $menu-link-height;
+        line-height: $menu-link-height;
+        text-decoration: none;
+        font-size: 100%;
+        color: $black;
+
+        @include media-query($on-phablets) {
+          background-image: none;
+          height: auto;
+          line-height: inherit;
+
+          padding: .25em .5em;
+
+          &:active,
+          &:hover {
+            background: #eee;
+          }
+        }
+      }
+    }
+  }
+}

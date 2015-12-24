@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  document.addEventListener("touchstart", function(){}, true);
+
   $('.no-js').removeClass('no-js').addClass('js')
 
   var currentTime = new Date().getHours();

@@ -11,9 +11,6 @@
 $logo-width: 36px;
 
 .logo {
-  float: left;
-  line-height: 56px;
-  margin-right: 1rem;
 
   &.fade-in svg > * {
     animation-name: fade-in;

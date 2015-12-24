@@ -6,8 +6,10 @@ layout: page
 ---
 # Stoffelhäusl
 
-<a class="fluid" href="http://stoffelhaeusl.info/">
-	<img src="http://reitermark.us/wp-content/uploads/2012/11/portfolio-stoffelhaeusl.png" alt="" />
-</a>
+<figure class='fluid'>
+  <a href="http://stoffelhaeusl.info/">
+  	<img src='{{ '/img/portfolio-stoffelhaeusl.png' | prepend: site.baseurl }}' alt='Stoffelhäusl' />
+  </a>
+</figure>
 
-<p>The <q>Stoffelhäusl</q> is a little cottage in our neighbourhood my father bought a couple of years ago. Within about a year it was restaurated. Since then its main use has been to host local and private events.</p>
+<p>The “Stoffelhäusl” is a century old cabin in my neighbourhood which my father bought a couple of years ago. Within about a year it was restaurated. Ever since its main use has been to host local and private events.</p>

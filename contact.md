@@ -3,7 +3,9 @@ layout: page
 title: Contact
 permalink: /contact/
 ---
-![Letters]({{ "/img/contact.jpg" | prepend: site.baseurl }})
+<figure class='fluid'>
+  <img src='{{ '/img/contact.jpg' | prepend: site.baseurl }}' alt='Letters'>
+</figure>
 
 If you are on Twitter, just head over there and [tweet me](https://twitter.com/reitermarkus '@reitermarkus'). I'll try to answer as soon as possible.
 
