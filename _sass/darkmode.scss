@@ -1,40 +1,38 @@
 // Darkmode Colors
 
-$white: #fff;
-
 .darkmode {
-    background-color: #000;
+  background-color: $black;
 
-    .logo svg {
+  .logo {
 
-      @mixin darkmode_logo_color($color) {
-        // fill: rgba($white,round(lightness($color)/1%)/100);
-        fill: invert($color);
-      }
-
-      // R letter
-      .r-shape01 { @include darkmode_logo_color($r_shape01); }
-      .r-shape02 { @include darkmode_logo_color($r_shape02); }
-      .r-shape03 { @include darkmode_logo_color($r_shape03); }
-      .r-shape04 { @include darkmode_logo_color($r_shape04); }
-      .r-shape05 { @include darkmode_logo_color($r_shape05); }
-      .r-shape06 { @include darkmode_logo_color($r_shape06); }
-      .r-shape07 { @include darkmode_logo_color($r_shape07); }
-      .r-shape08 { @include darkmode_logo_color($r_shape08); }
-      .r-shape09 { @include darkmode_logo_color($r_shape09); }
-      .r-shape10 { @include darkmode_logo_color($r_shape10); }
-      .r-shape11 { @include darkmode_logo_color($r_shape11); }
-      .r-shape12 { @include darkmode_logo_color($r_shape12); }
-      .r-shape13 { @include darkmode_logo_color($r_shape13); }
-
-      // M letter
-      .m-shape07 { @include darkmode_logo_color($m_shape07); }
-      .m-shape06 { @include darkmode_logo_color($m_shape06); }
-      .m-shape05 { @include darkmode_logo_color($m_shape05); }
-      .m-shape04 { @include darkmode_logo_color($m_shape04); }
-      .m-shape03 { @include darkmode_logo_color($m_shape03); }
-      .m-shape02 { @include darkmode_logo_color($m_shape02); }
-      .m-shape01 { @include darkmode_logo_color($m_shape01); }
-
+    @mixin darkmode-logo-color($color) {
+      // fill: rgba($white,round(lightness($color)/1%)/100);
+      fill: invert($color);
     }
+
+    // R letter
+    .r-shape01 { @include darkmode-logo-color($r-shape01); }
+    .r-shape02 { @include darkmode-logo-color($r-shape02); }
+    .r-shape03 { @include darkmode-logo-color($r-shape03); }
+    .r-shape04 { @include darkmode-logo-color($r-shape04); }
+    .r-shape05 { @include darkmode-logo-color($r-shape05); }
+    .r-shape06 { @include darkmode-logo-color($r-shape06); }
+    .r-shape07 { @include darkmode-logo-color($r-shape07); }
+    .r-shape08 { @include darkmode-logo-color($r-shape08); }
+    .r-shape09 { @include darkmode-logo-color($r-shape09); }
+    .r-shape10 { @include darkmode-logo-color($r-shape10); }
+    .r-shape11 { @include darkmode-logo-color($r-shape11); }
+    .r-shape12 { @include darkmode-logo-color($r-shape12); }
+    .r-shape13 { @include darkmode-logo-color($r-shape13); }
+
+    // M letter
+    .m-shape07 { @include darkmode-logo-color($m-shape07); }
+    .m-shape06 { @include darkmode-logo-color($m-shape06); }
+    .m-shape05 { @include darkmode-logo-color($m-shape05); }
+    .m-shape04 { @include darkmode-logo-color($m-shape04); }
+    .m-shape03 { @include darkmode-logo-color($m-shape03); }
+    .m-shape02 { @include darkmode-logo-color($m-shape02); }
+    .m-shape01 { @include darkmode-logo-color($m-shape01); }
+
+  }
 }

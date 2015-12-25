@@ -5,7 +5,7 @@
 
 @keyframes sparkle {
   from { opacity: 1; }
-  to   { opacity: 0.75; }
+  to   { opacity: .75; }
 }
 
 $logo-width: 36px;
@@ -13,70 +13,75 @@ $logo-width: 36px;
 .logo {
 
   &.fade-in svg > * {
-    animation-name: fade-in;
     animation-duration: 750ms; // keep in sync with logo-animation.js
     animation-fill-mode: backwards;
+    animation-name: fade-in;
     animation-timing-function: ease-in;
   }
 
   &:not(.fade-in):hover svg > * {
-    animation-name: sparkle;
+    animation-direction: alternate-reverse;
     animation-duration: 1000ms;
     animation-fill-mode: none;
-    animation-timing-function: ease-in-out;
-    animation-direction: alternate-reverse;
     animation-iteration-count: infinite;
+    animation-name: sparkle;
+    animation-timing-function: ease-in-out;
   }
 
   svg {
-    width: $logo-width;
-    vertical-align: middle;
     transition: 250ms;
+    vertical-align: middle;
+    width: $logo-width;
 
     > * {
       transition: 500ms;
     }
 
-    &:hover, :hover {
-      opacity: 0.9;
+    &:hover,
+    :hover {
+      opacity: .9;
     }
 
-    $total_shapes: 20; $m_shapes: 7;
-                       $r_shapes: $total_shapes - $m_shapes;
+    $total-shapes: 20;
 
-    $base_delay: 10ms; $m_base_delay: $base_delay * $r_shapes;
-                       $r_base_delay: $base_delay * $m_shapes;
+    $m-shapes: 7;
+    $r-shapes: $total-shapes - $m-shapes;
 
-                       // $max_delay: $base_delay * $m_shapes * $r_shapes;
-                       // keep maximum in sync with logo-animation.js
+    $base-delay: 10ms;
 
-    @mixin get_logo_animation_delay($num, $delay_base) {
-      animation-delay: $num * $delay_base;
+    $m-base-delay: $base-delay * $r-shapes;
+    $r-base-delay: $base-delay * $m-shapes;
+
+    // $max_delay: $base-delay * $m-shapes * $r-shapes;
+    // keep maximum in sync with logo-animation.js
+
+    @mixin get-logo-animation-delay($num, $delay-base) {
+      animation-delay: $num * $delay-base;
     }
 
     // M letter
-    .m-shape01 { fill: $m_shape01; @include get_logo_animation_delay( 1,$m_base_delay); }
-    .m-shape02 { fill: $m_shape02; @include get_logo_animation_delay( 2,$m_base_delay); }
-    .m-shape03 { fill: $m_shape03; @include get_logo_animation_delay( 3,$m_base_delay); }
-    .m-shape04 { fill: $m_shape04; @include get_logo_animation_delay( 4,$m_base_delay); }
-    .m-shape05 { fill: $m_shape05; @include get_logo_animation_delay( 5,$m_base_delay); }
-    .m-shape06 { fill: $m_shape06; @include get_logo_animation_delay( 6,$m_base_delay); }
-    .m-shape07 { fill: $m_shape07; @include get_logo_animation_delay( 7,$m_base_delay); }
+    .m-shape01 { @include get-logo-animation-delay(01, $m-base-delay); fill: $m-shape01; }
+    .m-shape02 { @include get-logo-animation-delay(02, $m-base-delay); fill: $m-shape02; }
+    .m-shape03 { @include get-logo-animation-delay(03, $m-base-delay); fill: $m-shape03; }
+    .m-shape04 { @include get-logo-animation-delay(04, $m-base-delay); fill: $m-shape04; }
+    .m-shape05 { @include get-logo-animation-delay(05, $m-base-delay); fill: $m-shape05; }
+    .m-shape06 { @include get-logo-animation-delay(06, $m-base-delay); fill: $m-shape06; }
+    .m-shape07 { @include get-logo-animation-delay(07, $m-base-delay); fill: $m-shape07; }
 
     // R letter
-    .r-shape01 { fill: $r_shape01; @include get_logo_animation_delay( 1,$r_base_delay); }
-    .r-shape02 { fill: $r_shape02; @include get_logo_animation_delay( 2,$r_base_delay); }
-    .r-shape03 { fill: $r_shape03; @include get_logo_animation_delay( 3,$r_base_delay); }
-    .r-shape04 { fill: $r_shape04; @include get_logo_animation_delay( 4,$r_base_delay); }
-    .r-shape05 { fill: $r_shape05; @include get_logo_animation_delay( 5,$r_base_delay); }
-    .r-shape06 { fill: $r_shape06; @include get_logo_animation_delay( 6,$r_base_delay); }
-    .r-shape07 { fill: $r_shape07; @include get_logo_animation_delay( 7,$r_base_delay); }
-    .r-shape08 { fill: $r_shape08; @include get_logo_animation_delay( 8,$r_base_delay); }
-    .r-shape09 { fill: $r_shape09; @include get_logo_animation_delay( 9,$r_base_delay); }
-    .r-shape10 { fill: $r_shape10; @include get_logo_animation_delay(10,$r_base_delay); }
-    .r-shape11 { fill: $r_shape11; @include get_logo_animation_delay(11,$r_base_delay); }
-    .r-shape12 { fill: $r_shape12; @include get_logo_animation_delay(12,$r_base_delay); }
-    .r-shape13 { fill: $r_shape13; @include get_logo_animation_delay(13,$r_base_delay); }
+    .r-shape01 { @include get-logo-animation-delay(01, $r-base-delay); fill: $r-shape01; }
+    .r-shape02 { @include get-logo-animation-delay(02, $r-base-delay); fill: $r-shape02; }
+    .r-shape03 { @include get-logo-animation-delay(03, $r-base-delay); fill: $r-shape03; }
+    .r-shape04 { @include get-logo-animation-delay(04, $r-base-delay); fill: $r-shape04; }
+    .r-shape05 { @include get-logo-animation-delay(05, $r-base-delay); fill: $r-shape05; }
+    .r-shape06 { @include get-logo-animation-delay(06, $r-base-delay); fill: $r-shape06; }
+    .r-shape07 { @include get-logo-animation-delay(07, $r-base-delay); fill: $r-shape07; }
+    .r-shape08 { @include get-logo-animation-delay(08, $r-base-delay); fill: $r-shape08; }
+    .r-shape09 { @include get-logo-animation-delay(09, $r-base-delay); fill: $r-shape09; }
+    .r-shape10 { @include get-logo-animation-delay(10, $r-base-delay); fill: $r-shape10; }
+    .r-shape11 { @include get-logo-animation-delay(11, $r-base-delay); fill: $r-shape11; }
+    .r-shape12 { @include get-logo-animation-delay(12, $r-base-delay); fill: $r-shape12; }
+    .r-shape13 { @include get-logo-animation-delay(13, $r-base-delay); fill: $r-shape13; }
 
   }
 }

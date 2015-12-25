@@ -1,8 +1,8 @@
 .content {
   margin: 0 auto;
-  padding: 0 ((100%-$content-width)/2);
-  width: auto;
   max-width: $max-content-width;
+  padding: 0 ((100% - $content-width) / 2);
+  width: auto;
 
   @include media-query($on-desktops) {
     font-size: 1.25em;
@@ -19,27 +19,75 @@
   }
 
   p {
-    -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
+    -webkit-hyphens: auto;
   }
 
   .fluid {
-    width: 100%/$content-width*100%;
-    margin-left: -(100%-$content-width)/2/$content-width*100%;
-    height: auto !important;
     display: block;
+    margin-left: (-(100% - $content-width) / 2 / $content-width * 100%);
+    width: (100% / $content-width * 100%);
 
     @include media-query($on-desktops) {
+      margin-left: (($max-content-width + (-$fluid-width-on-desktops)) / 2);
       width: $fluid-width-on-desktops;
-      margin-left: ($max-content-width+(-$fluid-width-on-desktops))/2;
     }
 
     img {
       width: 100%;
     }
-
   }
-
 }
 
+
+// Page content
+
+.post-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+
+  > li {
+    margin-bottom: $spacing-unit;
+  }
+}
+
+.post-meta {
+  color: $grey-color;
+  font-size: $small-font-size;
+}
+
+.post-link {
+  display: block;
+  font-size: 24px;
+}
+
+
+// Posts
+
+.post-header {
+  margin-bottom: $spacing-unit;
+}
+
+.post-title {
+  font-size: 42px;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+.post-content {
+  margin-bottom: $spacing-unit;
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+}

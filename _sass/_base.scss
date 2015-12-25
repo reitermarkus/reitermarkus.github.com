@@ -1,28 +1,35 @@
-/**
- * Basic styling
- */
+// Basic styling
+
 body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    font-weight: 300;
-    color: $text-color;
-    background-color: $background-color;
-    -webkit-text-size-adjust: 100%;
+  background-color: $background-color;
+  color: $text-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: 300;
+  line-height: $base-line-height;
+  -webkit-text-size-adjust: 100%;
 }
 
 
 
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
+// Set `margin-bottom` to maintain vertical rhythm
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+  margin-bottom: $spacing-unit / 2;
 }
-
 
 
 // Images
@@ -33,48 +40,46 @@ img {
 }
 
 
+// Figures
 
-/**
- * Figures
- */
 figure > img {
-    display: block;
+  display: block;
 }
 
 figcaption {
-    font-size: $small-font-size;
+  font-size: $small-font-size;
 }
 
 
+// Lists
 
-/**
- * Lists
- */
-ul, ol {
-    margin-left: $spacing-unit;
+ul,
+ol {
+  margin-left: $spacing-unit;
 }
 
 li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
 }
 
 
+// Headings
 
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
 }
 
 
+// Links
 
-/**
- * Links
- */
 a {
   &,
   &:visited {
@@ -83,78 +88,64 @@ a {
   }
 
   &:hover {
-      color: $text-color;
-      text-decoration: underline;
+    color: $text-color;
+    text-decoration: underline;
   }
 }
 
 
+// Blockquotes
 
-/**
- * Blockquotes
- */
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
-    font-style: italic;
+  border-left: 4px solid $grey-color-light;
+  color: $grey-color;
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: -1px;
+  padding-left: $spacing-unit / 2;
 
-    > :last-child {
-        margin-bottom: 0;
-    }
+  > :last-child {
+    margin-bottom: 0;
+  }
 }
 
 
-
-// Code formatting
+// Code Formatting
 
 pre,
 code {
-  border: $menu-link-border;
-  border-radius: 0.25em;
   background-color: $menu-link-background-color;
-  -webkit-hyphens: none;
+  border: $menu-link-border;
+  border-radius: .25em;
   -moz-hyphens: none;
   -ms-hyphens: none;
-
-  @include retina() {
-    border-width: 0.5px;
-  }
+  -webkit-hyphens: none;
 }
 
 code {
-  padding: 0.125em 0.375em;
+  font-size: .8125em;
+  padding: .125em .375em;
   vertical-align: middle;
-  font-size: 0.8125em;
 }
 
 pre {
-  padding: 8px 12px;
   overflow-x: scroll;
+  padding: 8px 12px;
 
   code {
-    border: none;
+    border: 0;
     padding: 0;
   }
 }
 
 
+// Icons
 
-
-
-
-
-/**
- * Icons
- */
 .icon {
 
   > svg {
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    height: 1em;
     vertical-align: middle;
 
     path {

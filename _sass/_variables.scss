@@ -4,59 +4,131 @@
 $white: #fff;
 $black: #000;
 
+$yellow: #ff0;
+$silver: #c0c0c0;
+
 
 // Logo Colors
 
-$m_shape01: #0076EE;
-$m_shape02: #0098FF;
-$m_shape03: #0055BB;
-$m_shape04: #0065C7;
-$m_shape05: #0087D0;
-$m_shape06: #000B7E;
-$m_shape07: #003998;
+$m-shape01: #0076ee;
+$m-shape02: #0098ff;
+$m-shape03: #05b;
+$m-shape04: #0065c7;
+$m-shape05: #0087d0;
+$m-shape06: #000b7e;
+$m-shape07: #003998;
 
-$r_shape01: #00788C;
-$r_shape02: #008477;
-$r_shape03: #009977;
-$r_shape04: #00B3A3;
-$r_shape05: #00AF77;
-$r_shape06: #009864;
-$r_shape07: #00C28B;
-$r_shape08: #008764;
-$r_shape09: #00788C;
-$r_shape10: #008477;
-$r_shape11: #00AF8B;
-$r_shape12: #00C28B;
-$r_shape13: #008E75;
+$r-shape01: #00788b;
+$r-shape02: #008477;
+$r-shape03: #097;
+$r-shape04: #00b3a3;
+$r-shape05: #00af77;
+$r-shape06: #009864;
+$r-shape07: #00c28b;
+$r-shape08: #008764;
+$r-shape09: #00788c;
+$r-shape10: #008477;
+$r-shape11: #00af8b;
+$r-shape12: #00c28b;
+$r-shape13: #008e75;
 
 
 // Link Color
 
-$link-color: $m_shape02;
+$link-color: $m-shape02;
 
 
 // GitHub Ribbon
 
 $github-ribbon-size: 250px;
-$github-ribbon-background-color: $m_shape03;
+$github-ribbon-background-color: $m-shape03;
 $github-ribbon-text-color: $white;
 
 // Page Title Color
 
-$page-title-color: $r_shape04;
+$page-title-color: $r-shape04;
+
+
+
+
+
+
+
+
+// Syntax Highlight Colors
+
+$syntax-comment-color: #998;
+$syntax-error-color: #a61717;
+$syntax-error-background-color: #e3d2d2;
+$syntax-comment-multiline-color: #998;
+$syntax-comment-preproc-color: #999;
+$syntax-comment-single-color: #998;
+$syntax-comment-special-color: #999;
+$syntax-generic-deleted-color: #000;
+$syntax-generic-deleted-background-color: #fdd;
+$syntax-generic-deleted-specific-color: #000;
+$syntax-generic-deleted-specific-background-color: #faa;
+$syntax-generic-error-color: #a00;
+$syntax-generic-heading-color: #999;
+$syntax-generic-inserted-color: #000;
+$syntax-generic-inserted-background-color: #dfd;
+$syntax-generic-inserted-specific-color: #000;
+$syntax-generic-inserted-specific-background-color: #afa;
+$syntax-generic-output-color: #888;
+$syntax-generic-prompt-color: #555;
+$syntax-generic-subheading-color: #aaa;
+$syntax-generic-traceback-color: #a00;
+$syntax-keyword-type-color: #458;
+$syntax-literal-number-color: #099;
+$syntax-literal-string-color: #d14;
+$syntax-name-attribute-color: #008080;
+$syntax-name-builtin-color: #0086b3;
+$syntax-name-class-color: #458;
+$syntax-name-constant-color: #008080;
+$syntax-name-entity-color: #800080;
+$syntax-name-exception-color: #900;
+$syntax-name-function-color: #900;
+$syntax-name-namespace-color: #555;
+$syntax-name-tag-color: #000080;
+$syntax-name-variable-color: #008080;
+$syntax-text-whitespace-color: #bbb;
+$syntax-literal-number-float-color: #099;
+$syntax-literal-number-hex-color: #099;
+$syntax-literal-number-integer-color: #099;
+$syntax-literal-number-oct-color: #099;
+$syntax-literal-string-backtick-color: #d14;
+$syntax-literal-string-char-color: #d14;
+$syntax-literal-string-doc-color: #d14;
+$syntax-literal-string-double-color: #d14;
+$syntax-literal-string-escape-color: #d14;
+$syntax-literal-string-heredoc-color: #d14;
+$syntax-literal-string-interpol-color: #d14;
+$syntax-literal-string-other-color: #d14;
+$syntax-literal-string-regex-color: #009926;
+$syntax-literal-string-single-color: #d14;
+$syntax-literal-string-symbol-color: #990073;
+$syntax-name-builtin-pseudo-color: #999;
+$syntax-name-variable-class-color: #008080;
+$syntax-name-variable-global-color: #008080;
+$syntax-name-variable-instance-color: #008080;
+$syntax-literal-number-integer-long-color: #099;
+
+
+
+
 
 
 // Our variables
 
 $base-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
+$small-font-size:  $base-font-size * .875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
 $text-color:       #111;
-$footer-text-color: $r_shape13;
+$footer-text-color: $r-shape13;
 
 $background-color: rgb(240, 240, 244);
 
@@ -66,16 +138,13 @@ $menu-link-border: 1px solid $menu-link-border-color;
 $menu-link-active-color: rgb(217, 217, 217);
 $menu-link-height: 44px;
 
-$header-padding-mobile: $menu-link-height/2;
+$header-padding-mobile: ($menu-link-height / 2);
 $header-padding-tablet: 2em;
 $header-padding-desktop: 4em;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
-
-$on-palm:          600px;
-$on-laptop:        800px;
 
 $content-width: 90%;
 $max-content-width: 960px;
