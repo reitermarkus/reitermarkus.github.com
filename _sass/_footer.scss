@@ -18,8 +18,7 @@ body {
   text-align: center;
 
   ul {
-    background-color: $menu-link-background-color;
-    border-top: $menu-link-border;
+    border-top: 1px solid rgba(0, 0, 0, .05);
     margin: $header-padding-mobile 0 0;
     padding: $header-padding-mobile 0;
 
@@ -39,9 +38,11 @@ body {
       width: 100%;
 
       @include media-query($on-phones) {
+        margin-bottom: 0;
 
         &:not(:first-child) {
           width: auto;
+          margin-top: $header-padding-mobile / 2;
 
           &:nth-child(2n) {
             &::after {
@@ -57,8 +58,11 @@ body {
       }
 
       @include media-query($on-tablets) {
-        margin: 0;
         width: auto;
+
+        &:not(:first-child) {
+          margin-top: 0;
+        }
 
         &:first-child {
 
