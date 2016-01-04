@@ -13,7 +13,7 @@ $logo-width: 36px;
 .logo {
 
   &.fade-in svg > * {
-    animation-duration: 750ms; // keep in sync with logo-animation.js
+    animation-duration: 750ms; // keep in sync with main.js
     animation-fill-mode: backwards;
     animation-name: fade-in;
     animation-timing-function: ease-in;
@@ -52,7 +52,7 @@ $logo-width: 36px;
     @each $group, $shapes in $logo-shapes {
       $i: 0;
 
-      @each $shape-num, $color in $shapes {
+      @each $shape-num, $color in $shapes { // keep in sync with main.js (currently 910): $base-delay * ($shapes-count - length($shapes)) * length($shapes)
         $i: $i + 1;
 
         .#{$group}-shape-#{$shape-num} {
