@@ -1,23 +1,23 @@
 
         <svg xmlns='http://www.w3.org/2000/svg' height='100%' width='100%' viewBox='0 0 12 10'>
-          <polygon class=m-shape01 points='0,10 2,10 2,8 '/>
-          <polygon class=m-shape02 points='0,6 0,10 2,8 '/>
-          <polygon class=m-shape03 points='0,6 2,8 2,5 0,6 '/>
-          <polygon class=m-shape04 points='0,3 0,6 2,5 2,5 '/>
-          <polygon class=m-shape07 points='2,5 4,7 4,4 '/>
-          <polygon class=m-shape05 points='0,2 0,3 2,5 2,2 '/>
-          <polygon class=m-shape06 points='2,2 2,5 4,4 '/>
-          <polygon class=r-shape01 points='4,0 4,2 6,2 '/>
-          <polygon class=r-shape02 points='4,0 6,2 8,0 '/>
-          <polygon class=r-shape03 points='8,0 4,4 12,0 '/>
-          <polygon class=r-shape04 points='8,2 10,2 12,0 '/>
-          <polygon class=r-shape05 points='10,2 12,3 12,0 '/>
-          <polygon class=r-shape06 points='10,2 10,6 12,3 '/>
-          <path    class=r-shape07 d='M9,5l1,1V4C10,4.5522461,9.5523071,5,9,5z'/>
-          <path    class=r-shape08 d='M12,4V3l-2,3l0.5543823,0.5543823C11.4179688,6.0276489,12,5.0855103,12,4z'/>
-          <path    class=r-shape09 d='M9,7c0.5713501,0,1.0998535-0.168396,1.5543823-0.4456177L9,5L7.4456177,6.5543823 C7.9001465,6.831604,8.4286499,7,9,7z'/>
-          <path    class=r-shape10 d='M8,4V3L7.4384155,6.5615234L9,5C8.4476929,5,8,4.5522461,8,4z'/>
-          <path    class=r-shape11 d='M7.4400635,6.5513916L8,3L6.1401978,4.8598022 C6.3545532,5.5722046,6.8185425,6.1705933,7.4400635,6.5513916z'/>
-          <polygon class=r-shape12 points='4,7 8,3 8,2 '/>
-          <polygon class=r-shape13 points='8,2 4,4 4,7 '/>
+          <polygon class=m-shape-01 points='0,10 2,10 2,8 '/>
+          <polygon class=m-shape-02 points='0,6 0,10 2,8 '/>
+          <polygon class=m-shape-03 points='0,6 2,8 2,5 0,6 '/>
+          <polygon class=m-shape-04 points='0,3 0,6 2,5 2,5 '/>
+          <polygon class=m-shape-07 points='2,5 4,7 4,4 '/>
+          <polygon class=m-shape-05 points='0,2 0,3 2,5 2,2 '/>
+          <polygon class=m-shape-06 points='2,2 2,5 4,4 '/>
+          <polygon class=r-shape-01 points='4,0 4,2 6,2 '/>
+          <polygon class=r-shape-02 points='4,0 6,2 8,0 '/>
+          <polygon class=r-shape-03 points='8,0 4,4 12,0 '/>
+          <polygon class=r-shape-04 points='8,2 10,2 12,0 '/>
+          <polygon class=r-shape-05 points='10,2 12,3 12,0 '/>
+          <polygon class=r-shape-06 points='10,2 10,6 12,3 '/>
+          <path    class=r-shape-07 d='M9,5l1,1V4C10,4.5522461,9.5523071,5,9,5z'/>
+          <path    class=r-shape-08 d='M12,4V3l-2,3l0.5543823,0.5543823C11.4179688,6.0276489,12,5.0855103,12,4z'/>
+          <path    class=r-shape-09 d='M9,7c0.5713501,0,1.0998535-0.168396,1.5543823-0.4456177L9,5L7.4456177,6.5543823 C7.9001465,6.831604,8.4286499,7,9,7z'/>
+          <path    class=r-shape-10 d='M8,4V3L7.4384155,6.5615234L9,5C8.4476929,5,8,4.5522461,8,4z'/>
+          <path    class=r-shape-11 d='M7.4400635,6.5513916L8,3L6.1401978,4.8598022 C6.3545532,5.5722046,6.8185425,6.1705933,7.4400635,6.5513916z'/>
+          <polygon class=r-shape-12 points='4,7 8,3 8,2 '/>
+          <polygon class=r-shape-13 points='8,2 4,4 4,7 '/>
         </svg>

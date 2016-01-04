@@ -1,0 +1,65 @@
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes sparkle {
+  from { opacity: 1; }
+  to   { opacity: .75; }
+}
+
+$logo-width: 36px;
+
+.logo {
+
+  &.fade-in svg > * {
+    animation-duration: 750ms; // keep in sync with logo-animation.js
+    animation-fill-mode: backwards;
+    animation-name: fade-in;
+    animation-timing-function: ease-in;
+  }
+
+  &:not(.fade-in):hover svg > * {
+    animation-direction: alternate-reverse;
+    animation-duration: 1000ms;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+    animation-name: sparkle;
+    animation-timing-function: ease-in-out;
+  }
+
+  svg {
+    transition: 250ms;
+    vertical-align: middle;
+    width: $logo-width;
+
+    > * {
+      transition: 500ms;
+    }
+
+    &:hover,
+    :hover {
+      opacity: .9;
+    }
+
+    $base-delay: 10ms;
+    $shapes-count: 0;
+
+    @each $group, $shapes in $logo-shapes {
+      $shapes-count: $shapes-count + length($shapes);
+    }
+
+    @each $group, $shapes in $logo-shapes {
+      $i: 0;
+
+      @each $shape-num, $color in $shapes {
+        $i: $i + 1;
+
+        .#{$group}-shape-#{$shape-num} {
+          animation-delay: $base-delay * ($shapes-count - length($shapes)) * $i;
+          fill: $color;
+        }
+      }
+    }
+  }
+}

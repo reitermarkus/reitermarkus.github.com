@@ -10,43 +10,54 @@ $silver: #c0c0c0;
 
 // Logo Colors
 
-$m-shape01: #0076ee;
-$m-shape02: #0098ff;
-$m-shape03: #05b;
-$m-shape04: #0065c7;
-$m-shape05: #0087d0;
-$m-shape06: #000b7e;
-$m-shape07: #003998;
-
-$r-shape01: #00788b;
-$r-shape02: #008477;
-$r-shape03: #097;
-$r-shape04: #00b3a3;
-$r-shape05: #00af77;
-$r-shape06: #009864;
-$r-shape07: #00c28b;
-$r-shape08: #008764;
-$r-shape09: #00788c;
-$r-shape10: #008477;
-$r-shape11: #00af8b;
-$r-shape12: #00c28b;
-$r-shape13: #008e75;
+$logo-shapes: (
+  (
+    m,
+    (
+      ('01' #0076ee),
+      ('02' #0098ff),
+      ('03'    #05b),
+      ('04' #0065c7),
+      ('05' #0087d0),
+      ('06' #000b7e),
+      ('07' #003998)
+    )
+  ),
+  (
+    r,
+    (
+      ('01' #00788b),
+      ('02' #008477),
+      ('03'    #097),
+      ('04' #00b3a3),
+      ('05' #00af77),
+      ('06' #009864),
+      ('07' #00c28b),
+      ('08' #008764),
+      ('09' #00788c),
+      ('10' #008477),
+      ('11' #00af8b),
+      ('12' #00c28b),
+      ('13' #008e75)
+    )
+  )
+);
 
 
 // Link Color
 
-$link-color: $m-shape02;
+$link-color: #0098ff;
 
 
 // GitHub Ribbon
 
 $github-ribbon-size: 250px;
-$github-ribbon-background-color: $m-shape03;
+$github-ribbon-background-color: #05b;
 $github-ribbon-text-color: $white;
 
 // Page Title Color
 
-$page-title-color: $r-shape04;
+$page-title-color: #00b3a3;
 
 
 
@@ -127,8 +138,8 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$footer-text-color: $r-shape13;
+$text-color:        #111;
+$footer-text-color: #008e75;
 
 $background-color: rgb(240, 240, 244);
 
