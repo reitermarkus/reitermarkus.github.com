@@ -8,7 +8,7 @@
   to   { opacity: .75; }
 }
 
-$logo-width: 36px;
+$logo-width: 12px;
 
 .logo {
 
@@ -31,7 +31,11 @@ $logo-width: 36px;
   svg {
     transition: 250ms;
     vertical-align: middle;
-    width: $logo-width;
+    width: $logo-width * 3;
+
+    @include media-query($on-desktops) {
+      width: $logo-width * 4;
+    }
 
     > * {
       transition: 500ms;
