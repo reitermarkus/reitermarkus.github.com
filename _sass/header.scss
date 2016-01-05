@@ -34,28 +34,20 @@
 
 }
 
-.header  {
-  background-color: $menu-link-background-color;
+.header {
+  background-color: $menu-item-background-color;
   -webkit-tap-highlight-color: transparent;
 
   .logo,
   .site-title {
     text-align: center;
-    width: 100%;
-
-    &:active {
-      background-color: $menu-link-active-color;
-
-      @include media-query($on-tablets) {
-        background-color: initial;
-      }
-    }
   }
 
   .logo {
     display: block;
     margin: 0;
     padding: $header-padding-mobile 0;
+    width: 100%;
 
     @include media-query($on-tablets) {
       padding-top: $header-padding-tablet;
@@ -106,6 +98,14 @@
       margin-top: $header-padding-desktop;
     }
 
+    .current {
+      background-color: darken($white, 10%);
+
+      @include media-query($on-tablets) {
+        background-color: initial;
+      }
+    }
+
     &,
     ul {
       @extend %clearfix;
@@ -128,7 +128,7 @@
     }
 
     li {
-      background-color: $menu-link-background-color;
+      background-color: $menu-item-background-color;
       box-sizing: border-box;
       display: block;
       float: left;
@@ -171,11 +171,11 @@
           }
 
           &:nth-child(2n) a {
-            border-color: #00b3a3;
+            border-color: $menu-item-border-color-even;
           }
 
           &:nth-child(2n-1) a {
-            border-color: #0098ff;
+            border-color: $menu-item-border-color-odd;
           }
         }
       }
@@ -203,15 +203,6 @@
         }
       }
 
-      &:active,
-      &.current {
-        background-color: $menu-link-active-color;
-
-        @include media-query($on-tablets) {
-          background-color: transparent;
-        }
-      }
-
       a {
         background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="13px" viewBox="0 0 16 26"><polygon opacity="0.2" points="3,0.25 15.75,13 3,25.75 .75,23.5 11.25,13 .75,2.5"/></svg>');
         background-position: right center;
@@ -219,8 +210,8 @@
         color: $black;
         display: block;
         font-size: 100%;
-        height: $menu-link-height;
-        line-height: $menu-link-height;
+        height: $menu-item-height;
+        line-height: $menu-item-height;
         padding: 0;
         text-decoration: none;
 
@@ -233,7 +224,7 @@
 
           &:active,
           &:hover {
-            background-color: darken($menu-link-background-color, 5%);
+            background-color: darken($menu-item-background-color, 5%);
           }
         }
       }
@@ -242,8 +233,19 @@
     &,
     ul,
     li {
-      border-color: $menu-link-border-color;
+      border-color: $menu-item-border-color;
       border-width: 1px;
+    }
+  }
+
+  .logo,
+  nav li {
+    &:active {
+      background-color: darken($white, 15%);
+
+      @include media-query($on-tablets) {
+        background-color: initial;
+      }
     }
   }
 }

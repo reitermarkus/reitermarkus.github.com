@@ -1,0 +1,19 @@
+exclude: css/main.scss
+
+linters:
+  ColorVariable:
+    exclude: _sass/variables.scss
+  NestingDepth:
+    enabled: false
+  PseudoElement:
+    exclude: _sass/normalize.scss
+  QualifyingElement:
+    exclude: _sass/normalize.scss
+  SpaceBeforeBrace:
+    exclude:
+      - _sass/logo.scss
+      - _sass/syntax-highlighting.scss
+  SelectorDepth:
+    enabled: false
+  VendorPrefix:
+    enabled: false

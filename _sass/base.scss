@@ -114,8 +114,9 @@ blockquote {
 
 pre,
 code {
-  background-color: $menu-link-background-color;
-  border: $menu-link-border;
+  background-color: $menu-item-background-color;
+  border: 1px solid;
+  border-color: $menu-item-border-color;
   border-radius: .25em;
   -moz-hyphens: none;
   -ms-hyphens: none;
