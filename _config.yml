@@ -21,10 +21,9 @@ gems:
   - jekyll-sitemap
 
 # Exclusions
-exclude: [
-  '.gitignore',
-  'ReadMe.md',
-  'CNAME',
-  'Gemfile',
-  'Gemfile.lock',
-]
+exclude:
+  - '.gitignore'
+  - 'ReadMe.md'
+  - 'CNAME'
+  - 'Gemfile'
+  - 'Gemfile.lock'
