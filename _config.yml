@@ -16,8 +16,9 @@ markdown: kramdown
 
 # Plugins
 gems:
-  - jekyll-sitemap
+  - jekyll-coffeescript
   - jekyll-redirect-from
+  - jekyll-sitemap
 
 # Exclusions
 exclude: [
