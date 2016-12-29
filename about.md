@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /about
 ---
 Hi,<br>  
 my name is Markus Reiter and I live, work and study in Austria (as in “not the country where kangaroos live” — well, [not currently](http://news.bbc.co.uk/2/hi/europe/4813976.stm)). I graduated from commercial highschool in June 2014 and I am currently studying Computer Science at the [University of Innsbruck](http://www.uibk.ac.at).

@@ -12,7 +12,7 @@
         {% for menu_item in site.pages %}
           {% if menu_item.title %}
             {% if menu_item.url != '/404.html' %}
-              <li{% if page.url == menu_item.url %} class=current{% endif %}><a class=page-link href="{{ menu_item.url | prepend: site.baseurl }}">{{ menu_item.title }}</a></li>
+              <li{% if page.url == menu_item.url %} class=current{% endif %}><a class=page-link href="{{ menu_item.url | prepend: site.baseurl | remove: '.html' }}">{{ menu_item.title }}</a></li>
             {% endif %}
           {% endif %}
         {% endfor %}

@@ -1,8 +1,8 @@
 ---
-title: Portfolio
-permalink: /portfolio/
-redirect_from: /
 layout: page
+title: Portfolio
+permalink: /portfolio
+redirect_from: /
 ---
 # Stoffelhäusl
 

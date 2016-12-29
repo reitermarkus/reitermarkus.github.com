@@ -3,7 +3,7 @@ layout: default
 ---
 <article class=content>
   <header>
-    <h1><a href='{{ page.url | prepend: site.baseurl }}'>{{ page.title }}</a></h1>
+    <h1><a href="{{ page.url | prepend: site.baseurl | remove: '.html' }}">{{ page.title }}</a></h1>
     <p class=meta><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>
   {{ content }}

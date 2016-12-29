@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contact
-permalink: /contact/
+permalink: /contact
 ---
 <figure class='fluid'>
   <img src='{{ '/img/contact.jpg' | prepend: site.baseurl }}' alt='Letters'>
