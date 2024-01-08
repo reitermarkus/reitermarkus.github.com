@@ -1,8 +1,6 @@
 // Syntax highlighting styles
 
 .highlight {
-  @extend %vertical-rhythm;
-
   .c   { color: $syntax-comment-color; font-style: italic; }                                                                        // Comment
   .err { background-color: $syntax-error-background-color; color: $syntax-error-color; }                                            // Error
   .k   { font-weight: bold; }                                                                                                       // Keyword

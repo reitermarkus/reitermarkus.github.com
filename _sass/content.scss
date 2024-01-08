@@ -4,18 +4,8 @@
   padding: 0 ((100% - $content-width) / 2);
   width: auto;
 
-  @include media-query($on-desktops) {
-    font-size: 1.25em;
-  }
-
-  > header {
-    h1 {
-      font-size: 2.5em;
-
-      a {
-        color: $page-title-color;
-      }
-    }
+  > header h1 {
+    color: $page-title-color;
   }
 
   p {
@@ -41,6 +31,95 @@
   }
 }
 
+.cv-list {
+  display: block;
+  padding: 0;
+  margin-left: 0;
+}
+
+.cv-grid {
+  display: block;
+
+  .date {
+    padding: 1em 0 0;
+
+    @include media-query($on-tablets) {
+      padding: 2em 1em 1em 0;
+    }
+  }
+
+  .content {
+    display: contents;
+    padding: 0 0 1em;
+
+    @include media-query($on-tablets) {
+      display: block;
+      padding: 1em 0 1em 1em;
+    }
+
+    header {
+      margin-bottom: 1em;
+    }
+  }
+
+  @include media-query($on-tablets) {
+    display: grid;
+    grid-template-columns: 10.5em 1fr;
+  }
+
+  .date {
+    @include media-query($on-tablets) {
+      border-right: 1px solid rgba(0, 0, 0, 0.1);
+      grid-column: span 1/span 1;
+    }
+  }
+
+  .content {
+    display: block;
+    margin: 0;
+
+    @include media-query($on-tablets) {
+      grid-column: span 1/span 1;
+    }
+  }
+
+  .position {
+    margin-top: 0;
+  }
+
+  .content > header h1 {
+    color: inherit;
+  }
+
+  h1:has(+ h2) {
+    margin-bottom: 0;
+  }
+
+
+  h1 + h2 {
+    margin-top: 0;
+  }
+}
+
+.skill-list {
+  display: contents;
+  margin: 0;
+  padding: 0;
+}
+
+.skill {
+  display: inline-block;
+
+  position: relative;
+  list-style: none;
+
+  background: $page-title-color;
+  border-radius: .25em;
+  padding: 0.25em .5em;
+  color: white;
+
+  margin: 0 .5em .5em 0;
+}
 
 // Page content
 
@@ -50,7 +129,7 @@
   padding-left: 0;
 
   > li {
-    margin-bottom: $spacing-unit;
+    margin-bottom: 1em;
   }
 }
 
@@ -68,7 +147,7 @@
 // Posts
 
 .post-header {
-  margin-bottom: $spacing-unit;
+  margin-bottom: 1em;
 }
 
 .post-title {
@@ -78,7 +157,7 @@
 }
 
 .post-content {
-  margin-bottom: $spacing-unit;
+  margin-bottom: 1em;
 
   h2 {
     font-size: 32px;

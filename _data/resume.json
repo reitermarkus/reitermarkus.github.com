@@ -1,0 +1,318 @@
+{
+  "basics": {
+    "name": "Markus Reiter",
+    "label": "Computer Science Master Student / Open Source Developer",
+    "picture": "",
+    "email": "me@reitermark.us",
+    "website": "https://reitermark.us",
+    "summary": "",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "",
+      "countryCode": "AT",
+      "region": "Tirol"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "reitermarkus",
+        "url": "https://github.com/reitermarkus"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "markusreiter",
+        "url": "https://www.linkedin.com/in/markusreiter/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Rust Foundation",
+      "position": "Maintainer",
+      "website": "",
+      "startDate": "2019-08-01",
+      "summary": "Maintainer in the Rust Embedded Working Group",
+      "highlights": ["Rust", "Embedded Systems", "API Design", "GitHub Actions"]
+    },
+    {
+      "company": "Homebrew",
+      "position": "Maintainer",
+      "website": "https://brew.sh",
+      "startDate": "2015-06-01",
+      "summary": "Maintainer of the open-source Homebrew project, with main focus on Homebrew Cask and the <code>brew</code> command itself.",
+      "highlights": ["Ruby", "macOS", "Package Management", "GitHub Actions"]
+    },
+    {
+      "company": "University of Innsbruck",
+      "position": "External Lecturer",
+      "website": "",
+      "startDate": "2023-03-01",
+      "summary": "Lecturer for the “Operating Systems” proseminar of the Distributed and Parallel Systems group at the Department of Computer Science",
+      "highlights": ["C", "Linux", "Operating Systems", "Shell Scripting", "Teaching"],
+      "endDate": "2023-09-31"
+    },
+    {
+      "company": "University of Innsbruck",
+      "position": "External Lecturer",
+      "website": "",
+      "startDate": "2022-03-01",
+      "summary": "Lecturer for the “Operating Systems” proseminar of the Distributed and Parallel Systems group at the Department of Computer Science",
+      "highlights": ["C", "Linux", "Operating Systems", "Shell Scripting", "Teaching"],
+      "endDate": "2022-09-31"
+    },
+    {
+      "company": "University of Innsbruck",
+      "position": "External Lecturer",
+      "website": "",
+      "startDate": "2021-03-01",
+      "summary": "Lecturer for the “Operating Systems” proseminar of the Distributed and Parallel Systems group at the Department of Computer Science",
+      "highlights": ["C", "Linux", "Operating Systems", "Shell Scripting", "Teaching"],
+      "endDate": "2021-09-31"
+    },
+    {
+      "company": "Google Summer of Code",
+      "position": "Student",
+      "website": "",
+      "startDate": "2018-07-01",
+      "summary": "After the Homebrew Cask project was merged into the Homebrew project, almost the same download strategies were present for both formulae and casks. My task was to deduplicate them in order to reduce the maintainance burden moving forward.",
+      "highlights": ["Ruby", "macOS", "Package Management"],
+      "endDate": "2018-08-31"
+    },
+    {
+      "company": "holzweg GmbH",
+      "position": "Web Developer",
+      "website": "",
+      "startDate": "2017-07-01",
+      "summary": "",
+      "highlights": ["Ruby", "JavaScript", "PHP"],
+      "endDate": "2017-08-31"
+    },
+    {
+      "company": "Maschinenring Tirol",
+      "position": "Civil Service",
+      "website": "https://www.maschinenring.at/tirol",
+      "startDate": "2014-09-01",
+      "summary": "Civil servant in area of administration/correspondence",
+      "highlights": [],
+      "endDate": "2015-06-30"
+    },
+    {
+      "company": "Edition Tirol",
+      "position": "Intern",
+      "website": "",
+      "startDate": "2014-07-01",
+      "summary": "",
+      "highlights": ["Book Design", "Graphic Design"],
+      "endDate": "2014-08-31"
+    },
+    {
+      "company": "Edition Tirol",
+      "position": "Intern",
+      "website": "",
+      "startDate": "2013-07-01",
+      "summary": "",
+      "highlights": ["Book Design", "Graphic Design"],
+      "endDate": "2013-08-31"
+    },
+    {
+      "company": "P8 Marketing",
+      "position": "Intern",
+      "website": "https://www.p8.eu",
+      "startDate": "2012-07-01",
+      "summary": "",
+      "highlights": ["Graphic Design", "Public Relations", "Web Design"],
+      "endDate": "2012-08-31"
+    },
+    {
+      "company": "P8 Marketing",
+      "position": "Intern",
+      "website": "https://www.p8.eu",
+      "startDate": "2011-07-01",
+      "summary": "",
+      "highlights": ["Graphic Design", "Public Relations", "Web Design"],
+      "endDate": "2011-08-31"
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Innsbruck",
+      "area": "Computer Science",
+      "studyType": "Master of Science",
+      "startDate": "2020-04-01",
+      "gpa": "",
+      "courses": [
+        "Compiler Construction",
+        "Formal Language and Automata Theory",
+        "Master's Seminar 1",
+        "Master's Seminar 2",
+        "Online Communication",
+        "Embedded Systems",
+        "Optimization Methods",
+        "Data Warehouse Systems",
+        "Computer Haptics",
+        "Natural Language Processing",
+        "Parallel Systems",
+        "Semantic Web",
+        "Advanced C++ Programming",
+        "Distributed Applications in the Edge-Cloud Continuum",
+      ],
+      "endDate": "2024-02-28"
+    },
+    {
+      "institution": "University of Innsbruck",
+      "area": "Computer Science",
+      "studyType": "Bachelor of Science",
+      "startDate": "2015-09-01",
+      "gpa": "",
+      "courses": [
+        "Introduction to Programming",
+        "Introduction to Practical Computer Science",
+        "Introduction to Technical Computer Science",
+        "Introduction to Theoretical Computer Science",
+        "Linear Algebra",
+        "Algorithms and Data Structures",
+        "Operating Systems",
+        "Discrete Mathematics",
+        "Programming Methodology",
+        "Analysis",
+        "Database Systems",
+        "Design of Software Systems",
+        "Functional Programming",
+        "Logic",
+        "Computer Graphics",
+        "Introduction to Autonomous and Intelligent Systems",
+        "Introduction to Scientific Working",
+        "Computer Networks and Internet Technology",
+        "Software Engineering and Project Management",
+        "Specialisation Seminar",
+        "Distributed Systems",
+        "Cyberlaw",
+        "Seminar with Bachelor's Thesis",
+        "Methods of Software and Data Engineering",
+        "Introduction to Computer Vision",
+        "Introduction to Parallel Computing and Parallel Algorithms",
+        "Information Theory and Cryptology",
+        "Concurrent Programming",
+        "Software Quality",
+        "Web Services"
+      ],
+      "endDate": "2020-03-31"
+    },
+    {
+      "institution": "Business Academy Wörgl",
+      "area": "Specialisation Marketing English",
+      "studyType": "A-Levels",
+      "startDate": "2009-09-01",
+      "gpa": "",
+      "courses": [
+        "Business Administration",
+        "Accounting",
+        "Computer Science and Office Management",
+        "Civic Education",
+        "National Economy",
+        "Project Management",
+        "Traning Company",
+        "Personality Development and Social Skills",
+        "History",
+        "Sciences",
+        "Mathematics",
+        "Geography"
+      ],
+      "endDate": "2014-06-30"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Rust",
+      "level": "Expert",
+      "keywords": [
+        "API Design",
+        "FFI",
+        "Internet of Things",
+        "Home Automation",
+        "Embedded Systems",
+        "Peripheral Drivers"
+      ],
+    },
+    {
+      "name": "Homebrew",
+      "level": "Expert",
+      "keywords": ["Package Management", "macOS", "Continuous Integration (CI)", "Open Source", "GitHub Actions", "Ruby", "Git"],
+    },
+    {
+      "name": "Ruby",
+      "level": "Expert",
+      "keywords": ["RuboCop", "Homebrew"]
+    },
+    {
+      "name": "C",
+      "level": "Expert",
+      "keywords": [
+        "Linux",
+        "FFI",
+        "Embedded Software",
+        "Teaching",
+        "Make"
+      ]
+    },
+    {
+      "name": "KiCad",
+      "level": "Intermediate",
+      "keywords": [
+        "Printed Circuit Board (PCB) Design"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Proficient",
+      "keywords": ["GitHub Actions"]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Proficient",
+      "keywords": []
+    },
+    {
+      "name": "Python",
+      "level": "Intermediate",
+      "keywords": ["Ansible", "Jupyter Notebook"]
+    },
+    {
+      "name": "C++",
+      "level": "Intermediate",
+      "keywords": []
+    },
+    {
+      "name": "Design",
+      "level": "Proficient",
+      "keywords": [
+        "Book Design",
+        "Graphic Design",
+        "Web Design",
+        "Adobe Photoshop",
+        "Adobe Illustrator",
+        "Affinity Photo",
+        "Affinity Designer"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "German",
+      "fluency": "Native",
+    },
+    {
+      "language": "Tyrolean Dialect",
+      "fluency": "Native",
+    },
+    {
+      "language": "English",
+      "fluency": "C2"
+    },
+    {
+      "language": "Italian",
+      "fluency": "B2"
+    }
+  ]
+}

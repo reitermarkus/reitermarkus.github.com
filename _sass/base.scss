@@ -26,9 +26,16 @@ pre,
 ul,
 ol,
 dl,
-figure,
-%vertical-rhythm {
-  margin-bottom: $spacing-unit / 2;
+figure {
+  margin: 0;
+
+  &:not(:first-child) {
+    margin-top: 1em;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 1em;
+  }
 }
 
 
@@ -55,7 +62,7 @@ figcaption {
 
 ul,
 ol {
-  margin-left: $spacing-unit;
+  margin-left: 1em;
 }
 
 li {
@@ -102,7 +109,7 @@ blockquote {
   font-size: 18px;
   font-style: italic;
   letter-spacing: -1px;
-  padding-left: $spacing-unit / 2;
+  padding-left: 1em;
 
   > :last-child {
     margin-bottom: 0;
@@ -130,8 +137,7 @@ code {
 }
 
 pre {
-  overflow-x: scroll;
-  padding: 8px 12px;
+  padding: .5em 1em;
 
   code {
     border: 0;
