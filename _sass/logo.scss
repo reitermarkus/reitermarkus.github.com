@@ -19,7 +19,7 @@ $logo-width: 12px;
     animation-timing-function: ease-in;
   }
 
-  &:not(.fade-in):hover svg > * {
+  &:not(.fade-in) svg > * {
     animation-direction: alternate-reverse;
     animation-duration: 1000ms;
     animation-fill-mode: none;
@@ -39,11 +39,6 @@ $logo-width: 12px;
 
     > * {
       transition: 500ms;
-    }
-
-    &:hover,
-    :hover {
-      opacity: .9;
     }
 
     $base-delay: 10ms;

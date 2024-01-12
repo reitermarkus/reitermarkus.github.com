@@ -1,105 +1,52 @@
-.github-ribbon {
-  display: none;
-  height: $github-ribbon-size;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: $github-ribbon-size;
-
-  @include media-query($on-tablets) {
-    display: block;
-  }
-
-  .inner-ribbon {
-    background: $github-ribbon-background-color;
-    display: block;
-    left: 50%;
-    $line-height: 32px;
-    line-height: $line-height;
-    margin-left: -($github-ribbon-size / 2 + $github-ribbon-size / 4);
-    margin-top: -($line-height / 2 + $github-ribbon-size / 4);
-    position: relative;
-    text-align: center;
-    top: 50%;
-    transform: rotate(-45deg);
-    width: $github-ribbon-size;
-
-    &,
-    &:hover {
-      color: $github-ribbon-text-color;
-      text-decoration: none;
-    }
-
-  }
-
-}
-
 .header {
   background-color: $menu-item-background-color;
   -webkit-tap-highlight-color: transparent;
 
-  .logo,
-  .site-title {
-    text-align: center;
+  @media (prefers-color-scheme: dark) {
+    background-color: invert($menu-item-background-color);
   }
 
-  .logo {
-    display: block;
-    margin: 0;
-    padding: $header-padding-mobile 0;
-    width: 100%;
+  .site-title {
+    margin: 0 auto;
+    padding: 1em $padding-mobile;
+    font-size: 1.5em;
 
     @include media-query($on-tablets) {
-      padding-top: $header-padding-tablet;
+      text-align: center;
+      padding-top: 1.5em;
+      padding-bottom: 1.5em;
     }
 
     @include media-query($on-desktops) {
-      padding-top: $header-padding-desktop;
+      font-size: 2em;
+      padding-top: 2em;
+      padding-bottom: 2em;
     }
   }
 
-  .site-title {
-    display: none;
+  .logo {
+    margin-right: .5em;
 
     @include media-query($on-tablets) {
+      margin-right: 0;
       display: block;
-      font-size: 26px;
-      letter-spacing: -1px;
-      margin: 0;
-
-      a {
-        &,
-        &:visited {
-          color: $grey-color-dark;
-        }
-
-        &:hover {
-          color: darken($grey-color-dark, 25%);
-          text-decoration: none;
-        }
-      }
     }
   }
 
   nav {
-    clear: left;
-    margin: 0 0 37px;
     width: 100%;
 
     @include media-query($on-tablets) {
       border-bottom-style: solid;
-      margin-bottom: $header-padding-tablet;
-      margin-top: $header-padding-tablet;
       padding-bottom: $header-padding-tablet;
-    }
-
-    @include media-query($on-desktops) {
-      margin-bottom: $header-padding-desktop;
-      margin-top: $header-padding-desktop;
     }
 
     .current {
       background-color: darken($white, 10%);
+
+      @media (prefers-color-scheme: dark) {
+        background-color: invert(darken($white, 10%));
+      }
 
       @include media-query($on-tablets) {
         background-color: initial;
@@ -132,8 +79,12 @@
       box-sizing: border-box;
       display: block;
       float: left;
-      padding: 0 15px;
+      padding: 0 $padding-mobile;
       width: 100%;
+
+      @media (prefers-color-scheme: dark) {
+        background-color: invert($menu-item-background-color);
+      }
 
       @include media-query($on-phones) {
         width: 50%;
@@ -204,9 +155,6 @@
       }
 
       a {
-        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="13px" viewBox="0 0 16 26"><polygon opacity="0.2" points="3,0.25 15.75,13 3,25.75 .75,23.5 11.25,13 .75,2.5"/></svg>');
-        background-position: right center;
-        background-repeat: no-repeat;
         color: $black;
         display: block;
         font-size: 100%;
@@ -215,8 +163,31 @@
         padding: 0;
         text-decoration: none;
 
+        @media (prefers-color-scheme: dark) {
+          color: invert($black);
+        }
+
+        &:after {
+          content: '';
+          float: right;
+          height: 0.5em;
+          width: 0.5em;
+          display: inline-block;
+          border-right: 2px solid;
+          border-top: 2px solid;
+          border-color: $black;
+          transform: rotate(45deg) translateY(.75em) translateX(.75em);
+
+          @media (prefers-color-scheme: dark) {
+            border-color: invert($black);
+          }
+
+          @include media-query($on-tablets) {
+            display: none;
+          }
+        }
+
         @include media-query($on-tablets) {
-          background-image: none;
           height: auto;
           line-height: inherit;
 
@@ -224,7 +195,11 @@
 
           &:active,
           &:hover {
-            background-color: darken($menu-item-background-color, 5%);
+            background-color: darken($menu-item-background-color, 10%);
+
+            @media (prefers-color-scheme: dark) {
+              background-color: invert(darken($menu-item-background-color, 10%));
+            }
           }
         }
       }
@@ -235,6 +210,10 @@
     li {
       border-color: $menu-item-border-color;
       border-width: 1px;
+
+      @media (prefers-color-scheme: dark) {
+        border-color: invert($menu-item-border-color);
+      }
     }
   }
 
@@ -242,6 +221,10 @@
   nav li {
     &:active {
       background-color: darken($white, 15%);
+
+      @media (prefers-color-scheme: dark) {
+        background-color: invert(darken($white, 15%));
+      }
 
       @include media-query($on-tablets) {
         background-color: initial;

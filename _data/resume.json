@@ -281,7 +281,7 @@
     {
       "name": "C++",
       "level": "Intermediate",
-      "keywords": []
+      "keywords": ["CMake"]
     },
     {
       "name": "Design",

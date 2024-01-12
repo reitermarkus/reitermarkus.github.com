@@ -1,0 +1,7 @@
+{% if include.tags.size > 0 %}
+<ul class='tag-list' {% if include.label %}aria-label='{{ include.label }}'{% endif %}>
+  {% for tag in include.tags %}
+  <li class=tag>{{ tag }}</li>
+  {% endfor %}
+</ul>
+{% endif %}

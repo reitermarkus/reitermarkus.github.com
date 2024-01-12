@@ -4,6 +4,11 @@
 //
 
 [aria-hidden=false] {
-  clip: rect(1px, 1px, 1px, 1px);
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
   position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }

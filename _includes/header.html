@@ -1,10 +1,13 @@
 <header class=header>
+    <h1 class=site-title>
+      <a href='{{ '/' | prepend: site.baseurl }}' rel=home>
+        <span aria-hidden='true' class=logo>
+          {% include logo.svg %}
+        </span>
 
-    <span class=github-ribbon><a class=inner-ribbon href='https://github.com/reitermarkus/reitermarkus.github.com/'>View on GitHub</a></span>
-
-    <a class='logo' href='{{ '/' | prepend: site.baseurl }}' rel=home><span hidden>{{ site.title }}</span>{% include logo.svg %}
-    </a>
-    <h1 class=site-title><a href='{{ '/' | prepend: site.baseurl }}'>{{ site.title }}</a></h1>
+        <span>{{ site.title }}</span>
+      </a>
+    </h1>
 
     <nav>
       <h1 aria-hidden=false>Site Navigation</h1>

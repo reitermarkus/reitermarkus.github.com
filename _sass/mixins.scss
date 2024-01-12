@@ -26,6 +26,12 @@
 }
 
 
+@mixin hyphens($hyphens) {
+  -moz-hyphens: $hyphens;
+  -ms-hyphens: $hyphens;
+  -webkit-hyphens: $hyphens;
+}
+
 // Use clearfix like this:
 //
 //  div {

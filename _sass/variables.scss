@@ -107,19 +107,12 @@ $syntax-literal-number-integer-long-color: #099;
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
-$page-title-color: #00b3a3;
-
-
-// GitHub Ribbon
-
-$github-ribbon-size: 250px;
-$github-ribbon-background-color: #05b;
-$github-ribbon-text-color: $white;
+$page-title-color: #097;
 
 
 // Font
 
-$base-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$base-font-family: 'Galvji', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * .875;
 $base-line-height: 1.5;
@@ -148,10 +141,10 @@ $header-padding-mobile:  $menu-item-height / 2;
 $header-padding-tablet:  2em;
 $header-padding-desktop: 4em;
 
+$padding-mobile: 3rem;
+
 $content-width:     90%;
 $max-content-width: 960px;
-
-$fluid-width-on-desktops: 1280px;
 
 $on-phones:    320px;
 $on-tablets:   640px;

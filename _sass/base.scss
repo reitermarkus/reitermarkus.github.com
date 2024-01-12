@@ -7,7 +7,13 @@ body {
   font-size: $base-font-size;
   font-weight: 300;
   line-height: $base-line-height;
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: invert($background-color);
+    color: invert($text-color);
+  }
 }
 
 
@@ -91,11 +97,9 @@ a {
   &,
   &:visited {
     color: $link-color;
-    text-decoration: none;
   }
 
   &:hover {
-    color: $text-color;
     text-decoration: underline;
   }
 }
@@ -124,10 +128,13 @@ code {
   background-color: $menu-item-background-color;
   border: 1px solid;
   border-color: $menu-item-border-color;
-  border-radius: .25em;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  -webkit-hyphens: none;
+
+  @include hyphens(none);
+
+  @media (prefers-color-scheme: dark) {
+    background-color: invert($menu-item-background-color);
+    border-color: invert($menu-item-border-color);
+  }
 }
 
 code {
@@ -149,14 +156,7 @@ pre {
 // Icons
 
 .icon {
-
-  > svg {
-    display: inline-block;
-    height: 1em;
-    vertical-align: middle;
-
-    path {
-      fill: $grey-color;
-    }
-  }
+  height: 1em;
+  display: inline-block;
+  vertical-align: middle;
 }

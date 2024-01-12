@@ -3,38 +3,36 @@ layout: page
 title: Curriculum Vitae
 menu_title: CV
 permalink: /cv
-redirect_from: /
 ---
 {% assign resume = site.data.resume %}
 
 ## Work Experience
 
-<ul class='cv-list'>
-{% for work in resume.work %}
-<li class='cv-grid'>
-  <header class=date>{% include cv-date.html start=work.startDate end=work.endDate %}</header>
-  <div class=content>
-    <header>
-      <h1>{{ work.position }}</h1>
-      <h2>{{ work.company }}</h2>
-    </header>
-    
-    {% if work.summary != '' %}
-    <p>{{ work.summary }}</p>
-    {% endif %}
-        
-    {% include cv-highlights.html highlights=work.highlights %}
-  </div >
-</li>
-{% endfor %}
+<ul class='timeline'>
+  {% for work in resume.work %}
+  <li class='timeline-item'>
+    <header class=date>{% include cv-date.html start=work.startDate end=work.endDate %}</header>
+    <div class=content>
+      <header>
+        <h1>{{ work.position }}</h1>
+        <h2>{{ work.company }}</h2>
+      </header>
+      
+      {% if work.summary != '' %}
+      <p>{{ work.summary }}</p>
+      {% endif %}
+          
+      {% include tag-list.html tags=work.highlights %}
+    </div >
+  </li>
+  {% endfor %}
 </ul>
-
 
 ## Education
 
-<ul class='cv-list'>
+<ul class='timeline'>
   {% for education in resume.education %}
-  <li class='cv-grid'>
+  <li class='timeline-item'>
     <header class=date>{% include cv-date.html start=education.startDate end=education.endDate %}</header>
     <div class=content>
       <header>
@@ -42,14 +40,8 @@ redirect_from: /
         <h2>{{ education.institution }}</h2>
       </header>  
       <p>{{ education.area }}</p>
-
-      <p>Courses:</p>
       
-      <ul class='skill-list'>
-      {% for course in education.courses %}
-      <li class='skill'>{{ course }}</li>
-      {% endfor %}
-      </ul>
+      {% include tag-list.html label='Courses' tags=education.courses %}  
     </div>
   </li>
   {% endfor %}
@@ -57,18 +49,15 @@ redirect_from: /
 
 ## Skills
 
-<ul class='cv-list'>
+<ul class='timeline'>
   {% for skill in resume.skills %}
-  <li class='cv-grid'>
+  <li class='timeline-item'>
     <header class='date'>{{ skill.level }}</header>
     <div class='content'>  
       <header>
         <h1>{{ skill.name }}</h1>
-      </header>
-      <p>{{ skill.summary }}</p>
-            
-      {% include cv-highlights.html highlights=skill.keywords %}
-      
+      </header>  
+      {% include tag-list.html label='Highlights' tags=skill.keywords %}  
     </div>  
   </li>
   {% endfor %}  
@@ -76,7 +65,7 @@ redirect_from: /
 
 ## Languages
 
-<dl class='cv-grid'>
+<dl class='timeline-item'>
 
 {% for language in resume.languages %}
 

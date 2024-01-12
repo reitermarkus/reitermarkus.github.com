@@ -9,16 +9,18 @@ baseurl: ''
 url: https://reitermark.us
 twitter_username: reitermarkus
 github_username:  reitermarkus
+linkedin_username:  markusreiter
 timezone: Europe/Vienna
 
 # Build Settings
 markdown: kramdown
 
 # Plugins
-gems:
+plugins:
   - jekyll-coffeescript
   - jekyll-redirect-from
   - jekyll-sitemap
+  - jekyll-spaceship
 
 # Exclusions
 exclude:
@@ -27,3 +29,14 @@ exclude:
   - 'CNAME'
   - 'Gemfile'
   - 'Gemfile.lock'
+
+collections:
+  projects:
+    output: false
+
+excerpt_separator: <!--more-->
+
+
+jekyll-spaceship:
+  mermaid-processor:
+    mode: pre-fetch

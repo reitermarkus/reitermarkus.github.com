@@ -1,7 +1,9 @@
+$border-radius: .25em;
+
 .content {
   margin: 0 auto;
   max-width: $max-content-width;
-  padding: 0 ((100% - $content-width) / 2);
+  padding: 2em $padding-mobile;
   width: auto;
 
   > header h1 {
@@ -10,41 +12,37 @@
 
   p {
     font-size: 1.125em;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    -webkit-hyphens: auto;
+    @include hyphens(auto);
   }
 
-  .fluid {
-    display: block;
-    margin-left: (-(100% - $content-width) / 2 / $content-width * 100%);
-    width: (100% / $content-width * 100%);
+  > figure {
+    margin-left: -$padding-mobile;
+    margin-right: -$padding-mobile;
 
-    @include media-query($on-desktops) {
-      margin-left: (($max-content-width + (-$fluid-width-on-desktops)) / 2);
-      width: $fluid-width-on-desktops;
+    @include media-query($on-tablets) {
+      margin-left: -3em;
+      margin-right: -3em;
     }
 
-    img {
-      width: 100%;
+    img, pre {
+      border-radius: $border-radius;
     }
   }
 }
 
-.cv-list {
+.timeline {
   display: block;
   padding: 0;
   margin-left: 0;
 }
 
-.cv-grid {
+.timeline-item {
   display: block;
 
   .date {
-    padding: 1em 0 0;
-
     @include media-query($on-tablets) {
-      padding: 2em 1em 1em 0;
+      padding: 1em 0 0;
+      padding: 1.75em 2em 1em 0;
     }
   }
 
@@ -54,7 +52,7 @@
 
     @include media-query($on-tablets) {
       display: block;
-      padding: 1em 0 1em 1em;
+      padding: 1em 0 1em 2em;
     }
 
     header {
@@ -64,13 +62,17 @@
 
   @include media-query($on-tablets) {
     display: grid;
-    grid-template-columns: 10.5em 1fr;
+    grid-template-columns: 8em 1fr;
   }
 
   .date {
     @include media-query($on-tablets) {
       border-right: 1px solid rgba(0, 0, 0, 0.1);
       grid-column: span 1/span 1;
+
+      @media (prefers-color-scheme: dark) {
+        border-right-color: rgba(255, 255, 255, 0.1);
+      }
     }
   }
 
@@ -101,46 +103,29 @@
   }
 }
 
-.skill-list {
+.tag-list {
   display: contents;
-  margin: 0;
-  padding: 0;
 }
 
-.skill {
+.tag {
   display: inline-block;
-
   position: relative;
   list-style: none;
-
-  background: $page-title-color;
+  background-color: $page-title-color;
   border-radius: .25em;
   padding: 0.25em .5em;
   color: white;
-
   margin: 0 .5em .5em 0;
+
+  @media (prefers-color-scheme: dark) {
+    color: black;
+  }
 }
 
 // Page content
 
-.post-list {
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0;
-
-  > li {
-    margin-bottom: 1em;
-  }
-}
-
-.post-meta {
+.date {
   color: $grey-color;
-  font-size: $small-font-size;
-}
-
-.post-link {
-  display: block;
-  font-size: 24px;
 }
 
 
@@ -169,5 +154,22 @@
 
   h4 {
     font-size: 20px;
+  }
+}
+
+
+// Portfolio
+
+
+
+a  {
+  .icon.external-link {
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+  }
+
+  &:hover .icon.external-link {
+    transform: translate(.25em,-.25em);
   }
 }

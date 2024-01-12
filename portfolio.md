@@ -2,14 +2,30 @@
 layout: page
 title: Portfolio
 permalink: /portfolio
-redirect_from: /
 ---
-# Stoffelhäusl
+<ul class="timeline">
+  {% for project in site.projects reversed %}
+    <li class='timeline-item'>
+      <header class='date'>
+        <span>{{ project.year }}</span>  
+      </header>
 
-<figure class='fluid'>
-  <a href="http://stoffelhaeusl.info/">
-  	<img src='{{ '/img/portfolio-stoffelhaeusl.png' | prepend: site.baseurl }}' alt='Stoffelhäusl' />
-  </a>
-</figure>
-
-<p>The “Stoffelhäusl” is a century old cabin in my neighbourhood which my father bought a couple of years ago. Within about a year it was restaurated. Ever since its main use has been to host local and private events.</p>
+      <section class=content>
+        <header>
+          <h1><a href="{{ project.external_url }}">{{ project.title }}  {% include arrow.svg %}</a></h1>
+          <h2>{{ project.type }}</h2>
+        </header>
+        
+        {{ project.excerpt }}
+        
+        {% if project.tags.size > 0 %}
+        <ul class='tag-list'>
+          {% for tag in project.tags %}
+          <li class='tag'>{{ tag }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </section>
+    </li>
+  {% endfor %}
+</ul>
