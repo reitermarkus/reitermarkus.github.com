@@ -8,6 +8,7 @@ tags:
   - PHP
   - HTML
   - SCSS
+published: false
 ---
 <figure>
   <img src='{{ '/img/portfolio-froehlerhof.png' | prepend: site.baseurl }}' alt='Fröhlerhof' />
