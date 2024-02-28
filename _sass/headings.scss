@@ -8,3 +8,31 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
 }
+
+.pdf-link {
+  font-size: 0.5em;
+  border-radius: $border-radius;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 0.25em;
+  vertical-align: middle;
+
+  @media (prefers-color-scheme: dark) {
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  &,
+  &:hover,
+  &:visited {
+    color: white;
+  }
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.3);
+
+
+    @media (prefers-color-scheme: dark) {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  }
+
+}

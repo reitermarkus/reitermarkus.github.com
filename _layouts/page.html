@@ -3,7 +3,14 @@ layout: default
 ---
 <section class=content>
   <header>
+    {%if page.pdf_url %}
+    <h1>
+      <a href='{{ page.url | prepend: site.baseurl }}'>{{ page.title }}</a>
+      <a class='pdf-link' href='{{ page.pdf_url | prepend: site.baseurl }}'>PDF {% include arrow.svg %}</a>
+    </h1>
+    {% else %}
     <h1><a href='{{ page.url | prepend: site.baseurl }}'>{{ page.title }}</a></h1>
+    {% endif %}
   </header>
   {{ content }}
 </section>

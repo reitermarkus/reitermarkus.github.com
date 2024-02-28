@@ -1,5 +1,3 @@
-$border-radius: .25em;
-
 .content {
   margin: 0 auto;
   max-width: $max-content-width;
@@ -167,6 +165,7 @@ a  {
     transition-property: transform;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
     transition-duration: .15s;
+    vertical-align: middle;
   }
 
   &:hover .icon.external-link {

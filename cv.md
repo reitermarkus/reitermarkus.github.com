@@ -3,6 +3,7 @@ layout: page
 title: Curriculum Vitae
 menu_title: CV
 permalink: /cv
+pdf_url: /cv.pdf
 ---
 {% assign resume = site.data.resume %}
 
