@@ -41,7 +41,7 @@
       "website": "https://brew.sh",
       "startDate": "2015-06-01",
       "summary": "Maintainer of the open-source Homebrew project, with main focus on Homebrew Cask and the <code>brew</code> command itself.",
-      "highlights": ["Ruby", "macOS", "Package Management", "GitHub Actions"]
+      "highlights": ["Ruby", "macOS", "Package Management", "GitHub Actions", "Code-Review"]
     },
     {
       "company": "University of Innsbruck",
@@ -157,7 +157,7 @@
         "Advanced C++ Programming",
         "Distributed Applications in the Edge-Cloud Continuum",
       ],
-      "endDate": "2024-02-28"
+      "endDate": "2024-03-27"
     },
     {
       "institution": "University of Innsbruck",
