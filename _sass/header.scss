@@ -232,3 +232,45 @@
     }
   }
 }
+
+.sponsors {
+  position: absolute;
+  right: 1.25em;
+  top: 1.25em;
+
+  box-sizing: border-box;
+  border-radius: $border-radius;
+  border-width: 1px;
+  border-style: solid;
+  text-decoration: none;
+  padding: .5em;
+  border-color: $menu-item-border-color;
+  background-color: $white;
+
+  @media (prefers-color-scheme: dark) {
+    border-color: invert($menu-item-border-color);
+    background-color: invert($white);
+  }
+
+  &, &:hover, &:visited {
+   color: inherit;
+   text-decoration: none;
+  }
+
+  &:hover {
+    background-color: darken($white, 15%);
+
+
+    @media (prefers-color-scheme: dark) {
+      background-color: invert(darken($white, 15%));
+    }
+  }
+
+  svg {
+    height: 1em;
+    color: $github-sponsors-color;
+    fill: currentcolor;
+    vertical-align: text-bottom;
+    margin-right: .25em;
+  }
+}
