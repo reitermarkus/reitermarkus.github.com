@@ -24,11 +24,12 @@ plugins:
 
 # Exclusions
 exclude:
-  - '.gitignore'
-  - 'ReadMe.md'
-  - 'CNAME'
-  - 'Gemfile'
-  - 'Gemfile.lock'
+  - .gitignore
+  - ReadMe.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - vendor
 
 collections:
   projects:
