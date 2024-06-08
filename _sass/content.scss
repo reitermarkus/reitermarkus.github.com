@@ -54,7 +54,11 @@
     }
 
     header {
-      margin-bottom: 1em;
+      margin-bottom: 2em;
+
+      *:last {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -109,14 +113,15 @@
   display: inline-block;
   position: relative;
   list-style: none;
-  background-color: $page-title-color;
   border-radius: .25em;
   padding: 0.25em .5em;
-  color: white;
   margin: 0 .5em .5em 0;
+  color: invert($text-color);
+  background-color: $text-color;
 
   @media (prefers-color-scheme: dark) {
-    color: black;
+    color: $text-color;
+    background-color: invert($text-color);
   }
 }
 

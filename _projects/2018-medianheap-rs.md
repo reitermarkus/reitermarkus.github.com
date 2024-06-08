@@ -6,6 +6,7 @@ type: Rust Crate
 tags:
   - Rust
   - Embedded Software
+  - API Design
 ---
 {% highlight rust %}
 use medianheap::{Median, MedianHeap};

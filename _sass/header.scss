@@ -243,13 +243,13 @@
   border-width: 1px;
   border-style: solid;
   text-decoration: none;
-  padding: .5em;
+  padding: .25em .5em;
   border-color: $menu-item-border-color;
-  background-color: $white;
+  background-color: $background-color;
 
   @media (prefers-color-scheme: dark) {
     border-color: invert($menu-item-border-color);
-    background-color: invert($white);
+    background-color: invert($background-color);
   }
 
   &, &:hover, &:visited {
