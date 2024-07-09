@@ -28,6 +28,14 @@
   },
   "work": [
     {
+      "company": "BORA",
+      "position": "Embedded Software Engineer",
+      "website": "",
+      "startDate": "2024-05-01",
+      "summary": "Research and development of embedded software for kitchen appliances.",
+      "highlights": ["Embedded Systems", "STM32", "ESP32", "C", "C++", "Ruby", "Python"]
+    },
+    {
       "company": "Rust Foundation",
       "position": "Maintainer",
       "website": "",
