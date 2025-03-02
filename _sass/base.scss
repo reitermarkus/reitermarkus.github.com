@@ -128,6 +128,7 @@ code {
   background-color: $menu-item-background-color;
   border: 1px solid;
   border-color: $menu-item-border-color;
+  border-radius: $border-radius;
 
   @include hyphens(none);
 
