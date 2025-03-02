@@ -28,17 +28,34 @@
   },
   "work": [
     {
+      "company": "AQT",
+      "position": "Quantum Embedded Software Engineer",
+      "website": "https://www.aqt.eu",
+      "startDate": "2025-02-04",
+      "summary": "Development of embedded software for quantum systems.",
+      "highlights": ["Embedded Systems", "Sinara", "STM32", "Rust", "Python"]
+    },
+    {
       "company": "BORA",
       "position": "Embedded Software Engineer",
-      "website": "",
+      "website": "https://www.bora.com",
       "startDate": "2024-05-01",
+      "endDate": "2025-01-31",
       "summary": "Research and development of embedded software for kitchen appliances.",
-      "highlights": ["Embedded Systems", "STM32", "ESP32", "C", "C++", "Ruby", "Python"]
+      "highlights": [
+        "Embedded Systems",
+        "STM32",
+        "ESP32",
+        "C",
+        "C++",
+        "Ruby",
+        "Python"
+      ]
     },
     {
       "company": "Rust Foundation",
       "position": "Maintainer",
-      "website": "",
+      "website": "https://foundation.rust-lang.org",
       "startDate": "2019-08-01",
       "summary": "Maintainer in the Rust Embedded Working Group",
       "highlights": ["Rust", "Embedded Systems", "API Design", "GitHub Actions"]
@@ -49,39 +66,63 @@
       "website": "https://brew.sh",
       "startDate": "2015-06-01",
       "summary": "Maintainer of the open-source Homebrew project, with main focus on Homebrew Cask and the <code>brew</code> command itself.",
-      "highlights": ["Ruby", "macOS", "Package Management", "GitHub Actions", "Code-Review"]
+      "highlights": [
+        "Ruby",
+        "macOS",
+        "Package Management",
+        "GitHub Actions",
+        "Code-Review"
+      ]
     },
     {
       "company": "University of Innsbruck",
       "position": "External Lecturer",
-      "website": "",
+      "website": "https://www.uibk.ac.at",
       "startDate": "2023-03-01",
       "summary": "Lecturer for the “Operating Systems” proseminar of the Distributed and Parallel Systems group at the Department of Computer Science",
-      "highlights": ["C", "Linux", "Operating Systems", "Shell Scripting", "Teaching"],
+      "highlights": [
+        "C",
+        "Linux",
+        "Operating Systems",
+        "Shell Scripting",
+        "Teaching"
+      ],
       "endDate": "2023-09-31"
     },
     {
       "company": "University of Innsbruck",
       "position": "External Lecturer",
-      "website": "",
+      "website": "https://www.uibk.ac.at",
       "startDate": "2022-03-01",
       "summary": "Lecturer for the “Operating Systems” proseminar of the Distributed and Parallel Systems group at the Department of Computer Science",
-      "highlights": ["C", "Linux", "Operating Systems", "Shell Scripting", "Teaching"],
+      "highlights": [
+        "C",
+        "Linux",
+        "Operating Systems",
+        "Shell Scripting",
+        "Teaching"
+      ],
       "endDate": "2022-09-31"
     },
     {
       "company": "University of Innsbruck",
       "position": "External Lecturer",
-      "website": "",
+      "website": "https://www.uibk.ac.at",
       "startDate": "2021-03-01",
       "summary": "Lecturer for the “Operating Systems” proseminar of the Distributed and Parallel Systems group at the Department of Computer Science",
-      "highlights": ["C", "Linux", "Operating Systems", "Shell Scripting", "Teaching"],
+      "highlights": [
+        "C",
+        "Linux",
+        "Operating Systems",
+        "Shell Scripting",
+        "Teaching"
+      ],
       "endDate": "2021-09-31"
     },
     {
       "company": "Google Summer of Code",
       "position": "Student",
-      "website": "",
+      "website": "https://summerofcode.withgoogle.com",
       "startDate": "2018-07-01",
       "summary": "After the Homebrew Cask project was merged into the Homebrew project, almost the same download strategies were present for both formulae and casks. My task was to deduplicate them in order to reduce the maintainance burden moving forward.",
       "highlights": ["Ruby", "macOS", "Package Management"],
@@ -90,10 +131,10 @@
     {
       "company": "holzweg GmbH",
       "position": "Web Developer",
-      "website": "",
+      "website": "https://holzweg.com",
       "startDate": "2017-07-01",
-      "summary": "",
-      "highlights": ["Ruby", "JavaScript", "PHP"],
+      "summary": "Development of web applications and management of servers.",
+      "highlights": ["DevOps", "Ruby", "JavaScript", "PHP"],
       "endDate": "2017-08-31"
     },
     {
@@ -101,7 +142,7 @@
       "position": "Civil Service",
       "website": "https://www.maschinenring.at/tirol",
       "startDate": "2014-09-01",
-      "summary": "Civil servant in area of administration/correspondence",
+      "summary": "Civil servant in area of administration/correspondence.",
       "highlights": [],
       "endDate": "2015-06-30"
     },
@@ -145,10 +186,11 @@
   "education": [
     {
       "institution": "University of Innsbruck",
+      "website": "https://www.uibk.ac.at",
       "area": "Computer Science",
       "studyType": "Master of Science",
       "startDate": "2020-04-01",
-      "gpa": "",
+      "summary": "Master's Thesis: Porting a Low-Power Embedded Application from C to Rust for improved Safety and Maintainability",
       "courses": [
         "Compiler Construction",
         "Formal Language and Automata Theory",
@@ -163,16 +205,17 @@
         "Parallel Systems",
         "Semantic Web",
         "Advanced C++ Programming",
-        "Distributed Applications in the Edge-Cloud Continuum",
+        "Distributed Applications in the Edge-Cloud Continuum"
       ],
       "endDate": "2024-03-27"
     },
     {
       "institution": "University of Innsbruck",
+      "website": "https://www.uibk.ac.at",
       "area": "Computer Science",
       "studyType": "Bachelor of Science",
       "startDate": "2015-09-01",
-      "gpa": "",
+      "summary": "Bachelor's Thesis: IoT Data analytics using Serverless Computing",
       "courses": [
         "Introduction to Programming",
         "Introduction to Practical Computer Science",
@@ -209,10 +252,10 @@
     },
     {
       "institution": "Business Academy Wörgl",
+      "website": "https://hak-woergl.at",
       "area": "Specialisation Marketing English",
       "studyType": "A-Levels",
       "startDate": "2009-09-01",
-      "gpa": "",
       "courses": [
         "Business Administration",
         "Accounting",
@@ -241,12 +284,20 @@
         "Home Automation",
         "Embedded Systems",
         "Peripheral Drivers"
-      ],
+      ]
     },
     {
       "name": "Homebrew",
       "level": "Expert",
-      "keywords": ["Package Management", "macOS", "Continuous Integration (CI)", "Open Source", "GitHub Actions", "Ruby", "Git"],
+      "keywords": [
+        "Package Management",
+        "macOS",
+        "Continuous Integration (CI)",
+        "Open Source",
+        "GitHub Actions",
+        "Ruby",
+        "Git"
+      ]
     },
     {
       "name": "Ruby",
@@ -256,20 +307,12 @@
     {
       "name": "C",
       "level": "Expert",
-      "keywords": [
-        "Linux",
-        "FFI",
-        "Embedded Software",
-        "Teaching",
-        "Make"
-      ]
+      "keywords": ["Linux", "FFI", "Embedded Software", "Teaching", "Make"]
     },
     {
       "name": "KiCad",
       "level": "Intermediate",
-      "keywords": [
-        "Printed Circuit Board (PCB) Design"
-      ]
+      "keywords": ["Printed Circuit Board (PCB) Design"]
     },
     {
       "name": "TypeScript",
@@ -308,11 +351,11 @@
   "languages": [
     {
       "language": "German",
-      "fluency": "Native",
+      "fluency": "Native"
     },
     {
       "language": "Tyrolean Dialect",
-      "fluency": "Native",
+      "fluency": "Native"
     },
     {
       "language": "English",

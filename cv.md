@@ -16,13 +16,17 @@ pdf_url: /cv.pdf
     <div class=content>
       <header>
         <h1>{{ work.position }}</h1>
-        <h2>{{ work.company }}</h2>
+        <h2>
+          {% if work.website != '' %}<a href="{{ work.website }}">{% endif %}
+          {{ work.company }}
+          {% if work.website != '' %}</a>{% endif %}
+        </h2>
       </header>
-      
-      {% if work.summary != '' %}
+
+      {% if work.summary and work.summary != '' %}
       <p>{{ work.summary }}</p>
       {% endif %}
-          
+
       {% include tag-list.html tags=work.highlights %}
     </div >
   </li>
@@ -38,11 +42,19 @@ pdf_url: /cv.pdf
     <div class=content>
       <header>
         <h1>{{ education.studyType }}</h1>
-        <h2>{{ education.institution }}</h2>
-      </header>  
+        <h2>
+          {% if education.website != '' %}<a href="{{ education.website }}">{% endif %}
+          {{ education.institution }}
+          {% if education.website != '' %}</a>{% endif %}
+        </h2>
+      </header>
       <p>{{ education.area }}</p>
-      
-      {% include tag-list.html label='Courses' tags=education.courses %}  
+
+      {% if education.summary and education.summary != '' %}
+      <p>{{ education.summary }}</p>
+      {% endif %}
+
+      {% include tag-list.html label='Courses' tags=education.courses %}
     </div>
   </li>
   {% endfor %}
@@ -54,14 +66,14 @@ pdf_url: /cv.pdf
   {% for skill in resume.skills %}
   <li class='timeline-item'>
     <header class='date'>{{ skill.level }}</header>
-    <div class='content'>  
+    <div class='content'>
       <header>
         <h1>{{ skill.name }}</h1>
-      </header>  
-      {% include tag-list.html label='Highlights' tags=skill.keywords %}  
-    </div>  
+      </header>
+      {% include tag-list.html label='Highlights' tags=skill.keywords %}
+    </div>
   </li>
-  {% endfor %}  
+  {% endfor %}
 </ul>
 
 ## Languages
@@ -71,13 +83,13 @@ pdf_url: /cv.pdf
 {% for language in resume.languages %}
 
 <dt class=date>{{ language.fluency }}</dt>
-<dd class=content>  
+<dd class=content>
   <h1>{{ language.language }}</h1>
-  
+
   {% if language.summary %}
-  
+
   <p>{{ language.summary }}</p>
-  
+
   {% endif %}
 </dd>
 
